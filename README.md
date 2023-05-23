@@ -1,4 +1,4 @@
-# i-renderer-demo
+# i-renderer-sample
 
 ## Project setup
 ```
