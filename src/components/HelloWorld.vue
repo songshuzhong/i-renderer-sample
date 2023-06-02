@@ -13,7 +13,7 @@
 <script>
 import {defineComponent} from 'vue';
 export default defineComponent({
-  name: 'i-helloWorld',
+  name: 'HelloWorld',
   props: {
     msg: String
   }
