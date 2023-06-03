@@ -15,7 +15,8 @@ const createRoutes = () => createRouter({
       component: Schema,
       props: {
         initSchema: FrameSchema,
-        classname: 'i-renderer-sample__container'
+        classname: 'i-renderer-sample__container',
+        canSchemaUpdate: false
       },
       children: [
         {
