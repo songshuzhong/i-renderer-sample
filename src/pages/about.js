@@ -1,5 +1,8 @@
 export default {
   renderer: 'page',
+  initData: {
+    message: 'how are you doing.'
+  },
   body: [
     {
       renderer: 'html',
@@ -7,10 +10,10 @@ export default {
     },
     {
       renderer: 'action',
-      text: '点击弹窗',
+      text: 'dialog',
       actionType: 'dialog',
       body: {
-        title: '卡片详情',
+        title: 'details',
         appendToBody: true,
         body: [
           {

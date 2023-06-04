@@ -11,7 +11,7 @@ const createRoutes = () => createRouter({
     {
       path: '/',
       name: 'IWebsite',
-      title: '零代码-IRender',
+      title: '零代码-IRenderer',
       component: Schema,
       props: {
         initSchema: FrameSchema,
@@ -46,6 +46,16 @@ const createRoutes = () => createRouter({
           component: Schema,
           props: {
             initSchema: About,
+            canSchemaUpdate: true
+          }
+        },
+        {
+          path: '/url',
+          name: 'url',
+          title: 'Remote Page',
+          component: Schema,
+          props: {
+            url: '/page.json',
             canSchemaUpdate: true
           }
         }

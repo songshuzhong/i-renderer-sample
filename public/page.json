@@ -1,0 +1,19 @@
+{
+  "data": {
+    "projectId": "2f487a94-34fd-467d-b5e9-1ef3c785840d",
+    "pageId": "82ff7ed5-8350-460d-a51c-b7c24d4f86b3",
+    "pageName": "createPage",
+    "pageTitle": "API",
+    "pageIcon": "",
+    "groupBy": null,
+    "hidden": null,
+    "assets": [],
+    "visible": [],
+    "pageDesc": null,
+    "pageSchema": "{\"renderer\":\"page\",\"body\":[{\"renderer\":\"html\",\"html\":\"<h1>page schema from api.</h1>\",\"inline\":true}]}",
+    "createdAt": "2023-02-14T11:09:46.000Z",
+    "updatedAt": "2023-06-04T02:10:19.000Z"
+  },
+  "status": 0,
+  "msg": "success"
+}
