@@ -41,4 +41,8 @@ body,
   top: 20px;
   right: 20px;
 }
+.i-renderer-sample__editor .el-drawer__body {
+  padding: 0;
+  margin: 0;
+}
 </style>

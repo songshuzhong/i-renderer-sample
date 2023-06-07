@@ -45,7 +45,7 @@ export default {
           body: {
             width: 100,
             appendToBody: true,
-            classname: '',
+            classname: 'i-renderer-sample__editor',
             header: {
               renderer: 'html',
               html: '编辑页面'
