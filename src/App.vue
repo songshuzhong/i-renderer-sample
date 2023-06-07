@@ -36,4 +36,9 @@ body,
   text-align: center;
   color: var(--el-text-color-secondary);
 }
+.i-header__container__body .i-component__fragment {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
 </style>

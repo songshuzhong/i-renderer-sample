@@ -34,6 +34,31 @@ export default {
               icon: 'Download'
             }
           ]
+        },
+        {
+          renderer: 'action',
+          icon: 'Edit',
+          category: 'icon',
+          size: 18,
+          name: '',
+          actionType: 'drawer',
+          body: {
+            width: 100,
+            appendToBody: true,
+            classname: '',
+            header: {
+              renderer: 'html',
+              html: '编辑页面'
+            },
+            body: [
+              {
+                renderer: 'editor',
+                editable: true,
+                isJson: false,
+                theme: 'vs'
+              }
+            ]
+          }
         }
       ]
     },

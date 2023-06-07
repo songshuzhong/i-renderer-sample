@@ -1,5 +1,5 @@
 import {createRouter, createWebHashHistory} from 'vue-router';
-import {Schema} from 'i-renderer/dist/js/renderer';
+import {Schema} from 'i-renderer';
 import FrameSchema from './data/frame';
 import Index from './pages/index';
 import Home from './pages/home';
