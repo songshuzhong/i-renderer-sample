@@ -11,6 +11,7 @@ import 'i-renderer/dist/css/index.css';
 
 const app = createApp(App);
 const routers = createRoutes();
+
 app.component(Editor.name, Editor);
 app
   .use(ElementPlus)
