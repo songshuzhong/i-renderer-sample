@@ -3,19 +3,27 @@
 </template>
 
 <script>
-import {defineComponent, watch, ref} from 'vue';
+import {defineComponent, watch, ref, onMounted, getCurrentInstance} from 'vue';
 import {useRoute} from 'vue-router';
 
 export default defineComponent({
   name: 'Application',
   setup() {
+    const {proxy} = getCurrentInstance();
     const key = ref('/');
     const route = useRoute();
 
     watch(() => route.path, val => {
       key.value = val;
     });
-
+    onMounted(() => {
+      import(/* webpackChunkName:"editor",webpackPrefetch:false,webpackMode:"lazy" */ 'i-renderer/dist/js/editor').then(res => {
+        const {Editor} = res;
+        proxy.$.appContext.components[Editor.name] = Editor;
+      }).catch(e => {
+        console.error(e);
+      });
+    });
     return {
       key
     };
@@ -41,8 +49,20 @@ body,
   top: 20px;
   right: 20px;
 }
+.i-renderer-sample__editor .el-drawer__header {
+  background: #282a36 !important;
+  border-bottom: none !important;
+}
+
 .i-renderer-sample__editor .el-drawer__body {
   padding: 0;
   margin: 0;
+  height: 100%;
+}
+.i-editor__container {
+  height: 100%;
+}
+.i-editor__container .monaco-editor {
+  height: calc(100% - 50px);
 }
 </style>

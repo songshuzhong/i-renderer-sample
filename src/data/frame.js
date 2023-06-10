@@ -54,8 +54,7 @@ export default {
               {
                 renderer: 'editor',
                 editable: true,
-                isJson: false,
-                theme: 'vs'
+                isJson: false
               }
             ]
           }
