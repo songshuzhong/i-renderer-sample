@@ -38,9 +38,9 @@ body,
   height: 100%;
 }
 .i-renderer-sample__footer {
-  height: 50px;
+  height: 60px;
   border-top: 1px dashed var(--el-border-color);
-  line-height: 50px;
+  line-height: 60px;
   text-align: center;
   color: var(--el-text-color-secondary);
 }
@@ -49,20 +49,30 @@ body,
   top: 20px;
   right: 20px;
 }
-.i-renderer-sample__editor .el-drawer__header {
-  background: #282a36 !important;
-  border-bottom: none !important;
+.i-renderer-sample__editor.el-drawer {
+  animation: unset;
+  transition: unset;
 }
-
 .i-renderer-sample__editor .el-drawer__body {
   padding: 0;
   margin: 0;
   height: 100%;
 }
-.i-editor__container {
+.i-editor__container,
+.i-layout__container {
   height: 100%;
 }
 .i-editor__container .monaco-editor {
   height: calc(100% - 50px);
+}
+.i-renderer-sample__editor .i-editor__container__tools {
+  padding-right: 50px;
+}
+.i-renderer-sample__editor__close {
+  position: absolute !important;
+  top: 10px;
+  right: 20px;
+  font-weight: 900;
+  z-index: 100;
 }
 </style>

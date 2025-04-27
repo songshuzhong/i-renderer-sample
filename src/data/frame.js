@@ -45,16 +45,21 @@ export default {
           body: {
             width: 100,
             appendToBody: true,
+            withHeader: false,
             classname: 'i-renderer-sample__editor',
-            header: {
-              renderer: 'html',
-              html: '编辑页面'
-            },
             body: [
               {
                 renderer: 'editor',
                 editable: true,
-                isJson: false
+                nimble: true,
+                isJson: false,
+              },
+              {
+                renderer: 'action',
+                icon: 'Close',
+                category: 'icon',
+                size: 18,
+                classname: 'i-renderer-sample__editor__close'
               }
             ]
           }

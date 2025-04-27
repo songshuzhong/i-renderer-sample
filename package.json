@@ -47,8 +47,8 @@
     "monaco-editor-webpack-plugin": "^6.0.0",
     "i-renderer": "latest",
     "video.js": "^8.0.4",
-    "vue": "^3.2.47",
-    "vue-router": "^4.1.6",
+    "vue": "latest",
+    "vue-router": "latest",
     "workbox-webpack-plugin": "^6.6.0"
   }
 }
