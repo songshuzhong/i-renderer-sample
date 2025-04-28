@@ -1,21 +1,14 @@
 <template>
-  <router-view :key="key" />
+  <router-view />
 </template>
 
 <script>
-import {defineComponent, watch, ref, onMounted, getCurrentInstance} from 'vue';
-import {useRoute} from 'vue-router';
+import {defineComponent, onMounted, getCurrentInstance} from 'vue';
 
 export default defineComponent({
   name: 'Application',
   setup() {
     const {proxy} = getCurrentInstance();
-    const key = ref('/');
-    const route = useRoute();
-
-    watch(() => route.path, val => {
-      key.value = val;
-    });
     onMounted(() => {
       import(/* webpackChunkName:"editor",webpackPrefetch:false,webpackMode:"lazy" */ 'i-renderer/dist/js/editor').then(res => {
         const {Editor} = res;
@@ -24,9 +17,6 @@ export default defineComponent({
         console.error(e);
       });
     });
-    return {
-      key
-    };
   }
 });
 </script>

@@ -55,7 +55,7 @@ const createRoutes = () => createRouter({
           title: 'Remote Page',
           component: Schema,
           props: {
-            url: '/page.json',
+            initSchema: '/page.json',
             canSchemaUpdate: true
           }
         }

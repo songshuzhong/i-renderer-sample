@@ -10,7 +10,7 @@ export default {
           router: true,
           body: [
             {
-              name: '/',
+              name: '',
               title: 'Home',
               renderer: 'menuitem',
               icon: 'HomeFilled'
@@ -32,7 +32,7 @@ export default {
               title: 'Url',
               renderer: 'menuitem',
               icon: 'Download'
-            }
+            },
           ]
         },
         {
