@@ -15,5 +15,22 @@ module.exports = {
         skipWaiting: true
       })
     ]
+  },
+  devServer: {
+    before(app) {
+      app.use('/page.json', (req, res, next) => {
+        const originalSend = res.send;
+        res.send = function(body) {
+          const serverData = {
+            serverTime: new Date().getTime(),
+          };
+          const modifiedBody = body
+            .toString()
+            .replace('"pageIcon": ""', `"pageIcon": "", "pageData": ${JSON.stringify(serverData)}`);
+          originalSend.call(res, modifiedBody);
+        };
+        next();
+      });
+    }
   }
 };

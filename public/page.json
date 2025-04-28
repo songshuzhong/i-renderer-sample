@@ -10,7 +10,21 @@
     "assets": [],
     "visible": [],
     "pageDesc": null,
-    "pageSchema": "{\"renderer\":\"page\",\"body\":[{\"renderer\":\"html\",\"html\":\"<h1>page schema from api.</h1>\",\"inline\":true}]}",
+    "pageSchema": {
+      "renderer": "page",
+      "body": [
+        {
+          "renderer": "html",
+          "html": "<h2>page schema from api.</h2>",
+          "inline": true
+        },
+        {
+          "renderer": "html",
+          "html": "<h1>serverTime: <%=$.serverTime%></h1>",
+          "inline": true
+        }
+      ]
+    },
     "createdAt": "2023-02-14T11:09:46.000Z",
     "updatedAt": "2023-06-04T02:10:19.000Z"
   },
