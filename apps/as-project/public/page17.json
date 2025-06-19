@@ -1,0 +1,135 @@
+{
+  "code": 200,
+  "data": {
+    "pageId": "70f1d2c2-026d-46b6-b81d-520f7f573dbe",
+    "id": 113,
+    "projectId": "4",
+    "pageTitle": "表格项",
+    "pageName": "formTable2",
+    "namespace": "联通",
+    "pageIcon": null,
+    "groupBy": "form",
+    "updatedBy": "admin",
+    "updatedCause": null,
+    "hidden": false,
+    "assets": [],
+    "visible": [
+      8
+    ],
+    "pageDesc": null,
+    "pageSchema": {
+      "renderer": "page",
+      "body": [
+        {
+          "renderer": "action",
+          "text": "Plus",
+          "actionType": "trigger",
+          "triggered": "Plus"
+        },
+        {
+          "renderer": "table",
+          "initApi": {
+            "url": "/videos.json",
+            "method": "get",
+            "cached": false,
+            "debounce": 0,
+            "params": {}
+          },
+          "columns": [
+            {
+              "type": "selection"
+            },
+            {
+              "label": "id",
+              "name": "id"
+            },
+            {
+              "label": "name",
+              "name": "name"
+            },
+            {
+              "label": "cover",
+              "name": "cover"
+            },
+            {
+              "label": "length",
+              "name": "length",
+              "body": [
+                {
+                  "renderer": "service",
+                  "initApi": {
+                    "url": "/sex.json",
+                    "method": "get",
+                    "cached": true,
+                    "debounce": 0,
+                    "params": {}
+                  }
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "renderer": "action",
+              "name": "Plus",
+              "text": "new",
+              "actionType": "dialog",
+              "size": "small",
+              "body": {
+                "body": [
+                  {
+                    "renderer": "table",
+                    "initApi": {
+                      "url": "/videos.json",
+                      "method": "get",
+                      "cached": false,
+                      "debounce": 0,
+                      "params": {}
+                    },
+                    "actions": [
+                      {
+                        "renderer": "computed",
+                        "name": "selectIds",
+                        "useWorker": true
+                      }
+                    ],
+                    "columns": [
+                      {
+                        "type": "selection",
+                        "selectableOn": "!$.selectIds?.includes($.id)"
+                      },
+                      {
+                        "label": "id",
+                        "name": "id"
+                      },
+                      {
+                        "label": "name",
+                        "name": "name"
+                      }
+                    ],
+                    "height": 290,
+                    "name": "DialogTable",
+                    "rowKey": "id"
+                  }
+                ],
+                "header": [
+                  {
+                    "renderer": "action",
+                    "immediateOn": "1==1",
+                    "actionType": "trigger",
+                    "triggered": "DialogTable.selected",
+                    "hiddenOn": "1==1"
+                  }
+                ],
+                "renderer": "dialog"
+              }
+            }
+          ],
+          "rowKey": "id"
+        }
+      ],
+      "worker": "e => {\r\n  return new Promise(resolve => {\r\n    const ids = e.data.selectedRows.map(i => i.id);\r\n    resolve(ids);\r\n  });\r\n}",
+      "innerStyle": ".i-crud__container__header {\r\n  margin-bottom: -38px;\r\n  z-index: -1;\r\n}"
+    }
+  }
+}

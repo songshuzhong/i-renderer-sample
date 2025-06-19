@@ -1,0 +1,606 @@
+{
+  "code": 200,
+  "data": {
+    "pageId": "70f1d2c2-026d-46b6-b81d-520f7f573dbe",
+    "id": 113,
+    "projectId": "4",
+    "pageTitle": "表格项",
+    "pageName": "formTable2",
+    "namespace": "联通",
+    "pageIcon": null,
+    "groupBy": "form",
+    "updatedBy": "admin",
+    "updatedCause": null,
+    "hidden": false,
+    "assets": [],
+    "visible": [
+      8
+    ],
+    "pageDesc": null,
+    "pageSchema": {
+      "renderer": "page",
+      "initData": {
+        "cascader": [
+          "component",
+          "form",
+          "checkbox"
+        ],
+        "editing": true,
+        "avatar": "https://avatars2.githubusercontent.com/u/8186664?s:60&v:4",
+        "text": "这是一段文本",
+        "image": "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+        "money": 100,
+        "color": "blue",
+        "digit": 19897979797979,
+        "percent": "100",
+        "rate": 5,
+        "checkboxButton": [
+          "Default",
+          "Error",
+          "Success",
+          "Processing"
+        ],
+        "checkbox": [
+          "Error",
+          "Success"
+        ],
+        "radio": "Error",
+        "radioButton": "Success",
+        "select": "no",
+        "progress": "40",
+        "slider": 29,
+        "dateRange": [
+          "2025-02-17",
+          "2025-02-21"
+        ],
+        "list": [
+          "Error",
+          "Processing"
+        ],
+        "javascript": "",
+        "code": "{\r\n  \"compilerOptions\": {\r\n    \"target\": \"esnext\",\r\n    \"moduleResolution\": \"node\",\r\n    \"jsx\": \"preserve\",\r\n    \"esModuleInterop\": true,\r\n    \"experimentalDecorators\": true,\r\n    \"strict\": true,\r\n    \"forceConsistentCasingInFileNames\": true,\r\n    \"noImplicitReturns\": true,\r\n    \"declaration\": true,\r\n    \"skipLibCheck\": true\r\n  },\r\n  \"include\": [\r\n    \"**/src\",\r\n    \"**/docs\",\r\n    \"scripts\",\r\n    \"**/demo\",\r\n    \".eslintrc.js\"\r\n  ]\r\n}"
+      },
+      "body": [
+        {
+          "renderer": "switch",
+          "name": "editing",
+          "type": "button",
+          "activeText": "只读",
+          "inactiveText": "编辑",
+          "target": "EditableForm"
+        },
+        {
+          "renderer": "form",
+          "actionApi": {
+            "url": "https://www.fastmock.site/mock/a93e0b29161761b8153cbc02db04c643/api/form/submit",
+            "params": {},
+            "method": "post"
+          },
+          "controls": [
+            {
+              "name": "text",
+              "renderer": "input",
+              "editableOn": "$.editing",
+              "label": "text"
+            },
+            {
+              "name": "image",
+              "renderer": "upload",
+              "editableOn": "$.editing",
+              "label": "image"
+            },
+            {
+              "name": "money",
+              "renderer": "number",
+              "editableOn": "$.editing",
+              "label": "money"
+            },
+            {
+              "renderer": "datepicker",
+              "name": "dateRange",
+              "label": "dateRange",
+              "type": "daterange",
+              "editableOn": "$.editing",
+              "readonly": false
+            },
+            {
+              "name": "color",
+              "renderer": "colorpicker",
+              "editableOn": "$.editing",
+              "label": "color"
+            },
+            {
+              "renderer": "cascader",
+              "name": "cascader",
+              "label": "cascader",
+              "editableOn": "$.editing",
+              "options": [
+                {
+                  "value": "guide",
+                  "label": "Guide",
+                  "children": [
+                    {
+                      "value": "disciplines",
+                      "label": "Disciplines",
+                      "children": [
+                        {
+                          "value": "consistency",
+                          "label": "Consistency"
+                        },
+                        {
+                          "value": "feedback",
+                          "label": "Feedback"
+                        },
+                        {
+                          "value": "efficiency",
+                          "label": "Efficiency"
+                        },
+                        {
+                          "value": "controllability",
+                          "label": "Controllability"
+                        }
+                      ]
+                    },
+                    {
+                      "value": "navigation",
+                      "label": "Navigation",
+                      "children": [
+                        {
+                          "value": "side nav",
+                          "label": "Side Navigation"
+                        },
+                        {
+                          "value": "top nav",
+                          "label": "Top Navigation"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "value": "component",
+                  "label": "Component",
+                  "children": [
+                    {
+                      "value": "basic",
+                      "label": "Basic",
+                      "children": [
+                        {
+                          "value": "layout",
+                          "label": "Layout"
+                        },
+                        {
+                          "value": "color",
+                          "label": "Color"
+                        },
+                        {
+                          "value": "typography",
+                          "label": "Typography"
+                        },
+                        {
+                          "value": "icon",
+                          "label": "Icon"
+                        },
+                        {
+                          "value": "button",
+                          "label": "Button"
+                        }
+                      ]
+                    },
+                    {
+                      "value": "form",
+                      "label": "Form",
+                      "children": [
+                        {
+                          "value": "radio",
+                          "label": "Radio"
+                        },
+                        {
+                          "value": "checkbox",
+                          "label": "Checkbox"
+                        },
+                        {
+                          "value": "input",
+                          "label": "Input"
+                        },
+                        {
+                          "value": "input-number",
+                          "label": "InputNumber"
+                        },
+                        {
+                          "value": "select",
+                          "label": "Select"
+                        },
+                        {
+                          "value": "cascader",
+                          "label": "Cascader"
+                        },
+                        {
+                          "value": "switch",
+                          "label": "Switch"
+                        },
+                        {
+                          "value": "slider",
+                          "label": "Slider"
+                        },
+                        {
+                          "value": "time-picker",
+                          "label": "TimePicker"
+                        },
+                        {
+                          "value": "date-picker",
+                          "label": "DatePicker"
+                        },
+                        {
+                          "value": "datetime-picker",
+                          "label": "DateTimePicker"
+                        },
+                        {
+                          "value": "upload",
+                          "label": "Upload"
+                        },
+                        {
+                          "value": "rate",
+                          "label": "Rate"
+                        },
+                        {
+                          "value": "form",
+                          "label": "Form"
+                        }
+                      ]
+                    },
+                    {
+                      "value": "data",
+                      "label": "Data",
+                      "children": [
+                        {
+                          "value": "table",
+                          "label": "Table"
+                        },
+                        {
+                          "value": "tag",
+                          "label": "Tag"
+                        },
+                        {
+                          "value": "progress",
+                          "label": "Progress"
+                        },
+                        {
+                          "value": "tree",
+                          "label": "Tree"
+                        },
+                        {
+                          "value": "pagination",
+                          "label": "Pagination"
+                        },
+                        {
+                          "value": "badge",
+                          "label": "Badge"
+                        }
+                      ]
+                    },
+                    {
+                      "value": "notice",
+                      "label": "Notice",
+                      "children": [
+                        {
+                          "value": "alert",
+                          "label": "Alert"
+                        },
+                        {
+                          "value": "loading",
+                          "label": "Loading"
+                        },
+                        {
+                          "value": "message",
+                          "label": "Message"
+                        },
+                        {
+                          "value": "message-box",
+                          "label": "MessageBox"
+                        },
+                        {
+                          "value": "notification",
+                          "label": "Notification"
+                        }
+                      ]
+                    },
+                    {
+                      "value": "navigation",
+                      "label": "Navigation",
+                      "children": [
+                        {
+                          "value": "menu",
+                          "label": "Menu"
+                        },
+                        {
+                          "value": "tabs",
+                          "label": "Tabs"
+                        },
+                        {
+                          "value": "breadcrumb",
+                          "label": "Breadcrumb"
+                        },
+                        {
+                          "value": "dropdown",
+                          "label": "Dropdown"
+                        },
+                        {
+                          "value": "steps",
+                          "label": "Steps"
+                        }
+                      ]
+                    },
+                    {
+                      "value": "others",
+                      "label": "Others",
+                      "children": [
+                        {
+                          "value": "dialog",
+                          "label": "Dialog"
+                        },
+                        {
+                          "value": "tooltip",
+                          "label": "Tooltip"
+                        },
+                        {
+                          "value": "popover",
+                          "label": "Popover"
+                        },
+                        {
+                          "value": "card",
+                          "label": "Card"
+                        },
+                        {
+                          "value": "carousel",
+                          "label": "Carousel"
+                        },
+                        {
+                          "value": "collapse",
+                          "label": "Collapse"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "value": "resource",
+                  "label": "Resource",
+                  "children": [
+                    {
+                      "value": "axure",
+                      "label": "Axure Components"
+                    },
+                    {
+                      "value": "sketch",
+                      "label": "Sketch Templates"
+                    },
+                    {
+                      "value": "docs",
+                      "label": "Design Documentation"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "digit",
+              "renderer": "number",
+              "editableOn": "$.editing",
+              "label": "digit"
+            },
+            {
+              "name": "rate",
+              "renderer": "rate",
+              "editableOn": "$.editing",
+              "label": "rate"
+            },
+            {
+              "renderer": "list",
+              "name": "list",
+              "label": "list",
+              "options": [
+                {
+                  "text": "全部",
+                  "value": "Default",
+                  "name": "Default",
+                  "title": "床前明月光",
+                  "desc": "李白"
+                },
+                {
+                  "text": "未解决",
+                  "value": "Error",
+                  "name": "Error",
+                  "title": "疑是地上霜",
+                  "desc": "李白"
+                },
+                {
+                  "text": "已解决",
+                  "value": "Success",
+                  "name": "Success",
+                  "title": "举头望明月",
+                  "desc": "李白"
+                },
+                {
+                  "text": "解决中",
+                  "value": "Processing",
+                  "name": "Processing",
+                  "title": "低头思故乡",
+                  "desc": "李白"
+                }
+              ],
+              "body": "<%=$.text%>",
+              "editableOn": "$.editing"
+            },
+            {
+              "name": "checkbox",
+              "renderer": "checkbox",
+              "options": [
+                {
+                  "text": "全部",
+                  "value": "Default"
+                },
+                {
+                  "text": "未解决",
+                  "value": "Error"
+                },
+                {
+                  "text": "已解决",
+                  "value": "Success"
+                },
+                {
+                  "text": "解决中",
+                  "value": "Processing"
+                }
+              ],
+              "editableOn": "$.editing",
+              "label": "checkbox"
+            },
+            {
+              "name": "checkboxButton",
+              "renderer": "checkbox",
+              "options": [
+                {
+                  "text": "全部",
+                  "value": "Default"
+                },
+                {
+                  "text": "未解决",
+                  "value": "Error"
+                },
+                {
+                  "text": "已解决",
+                  "value": "Success"
+                },
+                {
+                  "text": "解决中",
+                  "value": "Processing"
+                }
+              ],
+              "editableOn": "$.editing",
+              "label": "checkbox",
+              "type": "button"
+            },
+            {
+              "name": "radio",
+              "renderer": "radio",
+              "options": [
+                {
+                  "text": "全部",
+                  "value": "Default"
+                },
+                {
+                  "text": "未解决",
+                  "value": "Error"
+                },
+                {
+                  "text": "已解决",
+                  "value": "Success"
+                },
+                {
+                  "text": "解决中",
+                  "value": "Processing"
+                }
+              ],
+              "editableOn": "$.editing",
+              "label": "radio"
+            },
+            {
+              "name": "radioButton",
+              "renderer": "radio",
+              "options": [
+                {
+                  "text": "全部",
+                  "value": "Default"
+                },
+                {
+                  "text": "未解决",
+                  "value": "Error"
+                },
+                {
+                  "text": "已解决",
+                  "value": "Success"
+                },
+                {
+                  "text": "解决中",
+                  "value": "Processing"
+                }
+              ],
+              "editableOn": "$.editing",
+              "label": "radioButton",
+              "type": "button"
+            },
+            {
+              "name": "select",
+              "renderer": "select",
+              "options": [
+                {
+                  "text": "全部",
+                  "value": "all"
+                },
+                {
+                  "text": "未解决",
+                  "value": "open"
+                },
+                {
+                  "text": "已解决",
+                  "value": "closed"
+                },
+                {
+                  "text": "解决中",
+                  "value": "processing"
+                },
+                {
+                  "text": "不解决",
+                  "value": "no"
+                },
+                {
+                  "text": "已废弃",
+                  "value": "clear"
+                }
+              ],
+              "editableOn": "$.editing",
+              "label": "select"
+            },
+            {
+              "name": "progress",
+              "renderer": "progress",
+              "editableOn": "$.editing",
+              "label": "progress"
+            },
+            {
+              "name": "slider",
+              "renderer": "slider",
+              "editableOn": "$.editing",
+              "label": "slider"
+            },
+            {
+              "name": "code",
+              "renderer": "monaco",
+              "editableOn": "$.editing",
+              "label": "code",
+              "options": {
+                "language": "json"
+              }
+            },
+            {
+              "name": "javascript",
+              "renderer": "monaco",
+              "editableOn": "$.editing",
+              "label": "javascript",
+              "options": {
+                "language": "javascript"
+              }
+            },
+            {
+              "renderer": "action",
+              "actionType": "extends",
+              "triggered": "submit"
+            }
+          ],
+          "name": "EditableForm"
+        }
+      ]
+    }
+  }
+}

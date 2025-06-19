@@ -1,0 +1,486 @@
+{
+  "data": {
+    "projectId": "2f487a94-34fd-467d-b5e9-1ef3c785840d",
+    "pageId": "82ff7ed5-8350-460d-a51c-b7c24d4f86b3",
+    "pageName": "createPage",
+    "pageTitle": "API",
+    "pageIcon": "",
+    "groupBy": null,
+    "hidden": null,
+    "assets": [],
+    "visible": [],
+    "pageDesc": null,
+    "pageSchema": {
+      "renderer": "page",
+      "body": [
+        {
+          "renderer": "form",
+          "controls": [
+            {
+              "renderer": "divider",
+              "text": "计划内容"
+            },
+            {
+              "renderer": "input",
+              "name": "campaign_name",
+              "label": "计划名称",
+              "placeholder": "占位符",
+              "type": "text",
+              "validType": "normal",
+              "rules": [],
+              "requiredOn": "true",
+              "maxlength": 20
+            },
+            {
+              "renderer": "datepicker",
+              "name": "delivery_dates",
+              "label": "投放日期",
+              "type": "date",
+              "readonly": false,
+              "format": "YYYY-MM-DD",
+              "requiredOn": "true"
+            },
+            {
+              "renderer": "input",
+              "name": "remark",
+              "label": "说明",
+              "placeholder": "说明",
+              "type": "textarea",
+              "validType": "normal",
+              "rules": [],
+              "maxlength": 100,
+              "showWordLimit": true
+            },
+            {
+              "renderer": "input",
+              "name": "contract_no",
+              "label": "合同号",
+              "placeholder": "合同号",
+              "type": "text",
+              "validType": "normal",
+              "rules": []
+            },
+            {
+              "renderer": "radio",
+              "name": "delivery_type",
+              "defaultValue": "1",
+              "label": "售卖方式",
+              "type": "button",
+              "options": [
+                {
+                  "text": "CPD",
+                  "value": "1"
+                },
+                {
+                  "text": "CPM",
+                  "value": "2"
+                }
+              ]
+            },
+            {
+              "renderer": "input",
+              "name": "impression_amount",
+              "label": "投放量",
+              "placeholder": "请填写整数",
+              "type": "text",
+              "validType": "normal",
+              "rules": [],
+              "visibleOn": "data.delivery_type==2",
+              "requiredOn": "data.delivery_type==2"
+            },
+            {
+              "renderer": "radio",
+              "name": "delivery_sort",
+              "defaultValue": "2",
+              "label": "投放优先级",
+              "tip": "",
+              "target": "",
+              "type": "button",
+              "options": [
+                {
+                  "text": "首刷",
+                  "value": "1"
+                },
+                {
+                  "text": "二刷",
+                  "value": "2"
+                }
+              ]
+            },
+            {
+              "renderer": "radio",
+              "name": "special_style",
+              "defaultValue": "3",
+              "label": "互动类型",
+              "type": "button",
+              "options": [
+                {
+                  "text": "无",
+                  "value": "0"
+                },
+                {
+                  "text": "横滑",
+                  "value": "1"
+                },
+                {
+                  "text": "长按",
+                  "value": "2",
+                  "disabledOn": ""
+                },
+                {
+                  "text": "出框",
+                  "value": "3",
+                  "disabledOn": ""
+                }
+              ],
+              "requiredOn": "true"
+            },
+            {
+              "renderer": "input",
+              "name": "customer_id",
+              "label": "客户UID",
+              "placeholder": "占位符",
+              "type": "text",
+              "validType": "normal",
+              "rules": [],
+              "requiredOn": "true"
+            },
+            {
+              "renderer": "input",
+              "name": "content",
+              "label": "博文正文",
+              "placeholder": "请填写正文，最多1400个汉字",
+              "type": "textarea",
+              "maxlength": 1400,
+              "showWordLimit": true,
+              "validType": "normal",
+              "rules": [],
+              "requiredOn": "true"
+            },
+            {
+              "renderer": "radio",
+              "name": "banner",
+              "defaultValue": "1",
+              "label": "banner图",
+              "type": "button",
+              "options": [
+                {
+                  "text": "长图",
+                  "value": "1"
+                },
+                {
+                  "text": "短图",
+                  "value": "2"
+                },
+                {
+                  "text": "全图",
+                  "value": "3",
+                  "disabledOn": ""
+                },
+                {
+                  "text": "四图",
+                  "value": "4",
+                  "disabledOn": ""
+                }
+              ]
+            },
+            {
+              "renderer": "upload",
+              "name": "long",
+              "label": "长图",
+              "preview": true,
+              "validType": "normal",
+              "autoUpload": true,
+              "actionUrl": "https://www.fastmock.site/mock/a93e0b29161761b8153cbc02db04c643/api/upload",
+              "listType": "picture-card",
+              "limit": 1,
+              "feedbackConfig": [],
+              "visibleOn": "data.banner == 1",
+              "requiredOn": "true"
+            },
+            {
+              "renderer": "combo",
+              "name": "images",
+              "label": "图片集合",
+              "type": "array",
+              "length": 2,
+              "visibleOn": "data.banner == 4",
+              "controls": [
+                {
+                  "renderer": "upload",
+                  "name": "upload",
+                  "label": "",
+                  "preview": true,
+                  "validType": "normal",
+                  "autoUpload": true,
+                  "actionUrl": "https://www.fastmock.site/mock/a93e0b29161761b8153cbc02db04c643/api/upload",
+                  "listType": "picture",
+                  "limit": 1,
+                  "accept": ".mp4,.txt",
+                  "showFileList": false,
+                  "feedbackConfig": [],
+                  "requiredOn": "true"
+                }
+              ],
+              "rules": [
+                {
+                  "exp": "data.images.length<2",
+                  "message": "图片集合长度是2",
+                  "trigger": "blur"
+                }
+              ]
+            },
+            {
+              "renderer": "upload",
+              "visibleOn": "data.special_style == 3",
+              "name": "video_info",
+              "label": "出框彩色视频",
+              "preview": true,
+              "validType": "normal",
+              "type": "video",
+              "listType": "picture-card",
+              "feedbackConfig": [
+                "fid",
+                "duration",
+                "url",
+                "width",
+                "height",
+                "src",
+                "cover"
+              ],
+              "rules": [
+                {
+                  "required": false
+                }
+              ],
+              "autoUpload": true,
+              "actionUrl": " https://mock.mengxuegu.com/mock/6711b0089872121dfd71453f/api/upload?type=video",
+              "limit": 1,
+              "accept": ".mp4",
+              "spliced": false,
+              "astrict": {
+                "maxByte": "10000"
+              },
+              "data": {},
+              "requiredOn": "true"
+            },
+            {
+              "renderer": "switch",
+              "name": "video_while_watching",
+              "defaultValue": false,
+              "label": "视频边看边系列",
+              "tip": "",
+              "width": 40
+            },
+            {
+              "renderer": "input",
+              "name": "video_h5_link",
+              "label": "视频播放页H5",
+              "requiredOn": "data.video_while_watching",
+              "placeholder": "请填写视频播放页H5链接",
+              "type": "text",
+              "validType": "normal",
+              "rules": [],
+              "visibleOn": "data.video_while_watching"
+            },
+            {
+              "renderer": "switch",
+              "name": "frame_out_loop_flag",
+              "defaultValue": false,
+              "label": "结尾循环",
+              "width": 40,
+              "visibleOn": "data.special_style == 3"
+            },
+            {
+              "renderer": "input",
+              "name": "frame_out_loop_start_time",
+              "defaultValue": "2",
+              "label": "循环开始时间",
+              "placeholder": "占位符",
+              "type": "text",
+              "validType": "normal",
+              "rules": [
+                {
+                  "exp": "data.duration && data.frame_out_loop_start_time > data.duration",
+                  "message": "超过视频长度",
+                  "trigger": "blur"
+                },
+                {
+                  "exp": "data.frame_out_loop_start_time<1",
+                  "message": "开始时间大于0",
+                  "trigger": "blur"
+                }
+              ],
+              "visibleOn": "data.special_style == 3"
+            },
+            {
+              "renderer": "radio",
+              "name": "frame_out_action_type",
+              "defaultValue": "2",
+              "label": "出框动作结果",
+              "tip": "2",
+              "type": "button",
+              "options": [
+                {
+                  "text": "普通链接",
+                  "value": "2"
+                },
+                {
+                  "text": "直达链接",
+                  "value": "3"
+                },
+                {
+                  "text": "同步视频播放页H5",
+                  "value": "1",
+                  "disabledOn": "!data.video_while_watching"
+                }
+              ],
+              "visibleOn": "data.special_style == 3"
+            },
+            {
+              "renderer": "input",
+              "name": "frame_out_direct_link",
+              "label": "直达链接",
+              "placeholder": "请填直达链接",
+              "type": "text",
+              "validType": "normal",
+              "rules": [],
+              "visibleOn": "data.frame_out_action_type == 3",
+              "requiredOn": "data.frame_out_action_type == 3"
+            },
+            {
+              "renderer": "input",
+              "name": "frame_out_landing_page",
+              "label": "落地页链接",
+              "placeholder": "占位符",
+              "type": "text",
+              "validType": "normal",
+              "rules": [],
+              "visibleOn": "data.frame_out_action_type == 2",
+              "requiredOn": "data.frame_out_action_type == 2"
+            },
+            {
+              "renderer": "switch",
+              "name": "allow_comment",
+              "defaultValue": false,
+              "label": "开启评论",
+              "tip": "",
+              "width": 40
+            },
+            {
+              "renderer": "switch",
+              "name": "is_private",
+              "defaultValue": false,
+              "label": "设为私密",
+              "tip": "",
+              "width": 40
+            },
+            {
+              "renderer": "computed",
+              "visibleOn": "$.video_info",
+              "name": "frame_out_alpha_video",
+              "exp": "data.fid",
+              "deps": [
+                "fid"
+              ]
+            },
+            {
+              "renderer": "computed",
+              "visibleOn": "$.video_info",
+              "name": "fid",
+              "exp": "data.video_info.fid",
+              "deps": [
+                "video_info"
+              ]
+            },
+            {
+              "renderer": "computed",
+              "visibleOn": "$.video_info",
+              "name": "video_src",
+              "exp": "data.video_info.src",
+              "deps": [
+                "video_info"
+              ]
+            },
+            {
+              "renderer": "computed",
+              "visibleOn": "$.video_info",
+              "name": "video_cover",
+              "exp": "data.video_info.cover",
+              "deps": [
+                "video_info"
+              ]
+            },
+            {
+              "renderer": "computed",
+              "name": "frame_out_action_type",
+              "exp": "$.frame_out_action_type == '1' && '2'",
+              "deps": ["video_while_watching"]
+            },
+            {
+              "renderer": "action",
+              "text": "返回",
+              "type": "success",
+              "actionType": "url",
+              "url": "-1",
+              "body": {},
+              "plain": true
+            },
+            {
+              "renderer": "action",
+              "text": "重置",
+              "actionType": "reset",
+              "actionApi": {
+                "url": "",
+                "method": "post",
+                "params": {}
+              },
+              "params": {},
+              "body": {},
+              "type": "danger",
+              "plain": true
+            },
+            {
+              "renderer": "action",
+              "text": "创建计划",
+              "actionType": "submit",
+              "body": {},
+              "plain": true
+            },
+            {
+              "renderer": "viewer",
+              "body": [
+                {
+                  "renderer": "data"
+                }
+              ],
+              "footer": []
+            },
+            {
+              "renderer": "action",
+              "text": "审核通过",
+              "body": {},
+              "disabledOn": "data.campaign_status==1"
+            }
+          ],
+          "actionApi": {
+            "url": "https://www.fastmock.site/mock/a93e0b29161761b8153cbc02db04c643/api/form/submit",
+            "method": "post",
+            "params": {}
+          },
+          "name": "non_standard_create",
+          "classname": "actions-fixed"
+        }
+      ],
+      "innerStyle": ".i-layout__container {\n    position: relative;\n}\n.page__discovery-view {\n  .dv-video-wrapper__phone {\n    position: fixed;\n    top: 180px;\n    right: 40px;\n    width: 320px;\n    height: 560px;\n    padding: 10px;\n    margin-bottom: 120px;\n    border-radius: 28px;\n    background: #e6e7e8;\n    transform: scale(.85);\n    .i-wrapper__container__body {\n      position: absolute;\n      width: 300px;\n      height: 540px;\n      border-radius: 28px;\n      background: no-repeat url(http://js.t.sinajs.cn/weiboad/apps/ka/img/preview-discovery-view.2e866e53.png);\n      background-size: 100% 100%;\n    }\n  }\n  .i-video__container {\n    position: absolute;\n    top: 232px;\n    left: 10px;\n  }\n  .i-video__container__video {\n    border-radius: 8px;\n  }\n  .el-form-item {\n    &.fe_rgb_video_local_info,\n    &.frame_out_alpha_video_info,\n    &.gesture_link {\n      position: relative;\n      padding-top: 32px;\n      &::before {\n        position: absolute;\n        top: 0;\n        width: 582px;\n        height: 1px;\n        content: '';\n        background: #e6e7e8;\n      }\n    }\n    &.frame_out_landing_page,\n    &.frame_out_direct_link,\n    &.gesture_video_h5_link,\n    &.gesture_attention_uid,\n    &.gesture_landing_page {\n      position: relative;\n      padding-bottom: 32px;\n      &::before {\n        position: absolute;\n        bottom: 0;\n        width: 582px;\n        height: 1px;\n        content: '';\n        background: #e6e7e8;\n      }\n    }\n  }\n}\n",
+      "classname": "page__discovery-view",
+      "initData": {
+        "campaign_status": "1"
+      }
+    },
+    "createdAt": "2023-02-14T11:09:46.000Z",
+    "updatedAt": "2023-06-04T02:10:19.000Z"
+  },
+  "status": 0,
+  "msg": "success"
+}

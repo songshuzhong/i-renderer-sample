@@ -1,0 +1,123 @@
+{
+  "status": 0,
+  "message": "success",
+  "data": {
+    "projectId": "2f487a94-34fd-461d-b5e9-1ef3c785840d",
+    "pageId": "82ff7ed5-8350-460d-a512-b7c24d4f86b3",
+    "pageName": "page7",
+    "pageTitle": "Page7",
+    "pageIcon": "",
+    "groupBy": null,
+    "hidden": null,
+    "assets": [],
+    "visible": [],
+    "pageDesc": null,
+    "createdAt": "2023-02-14T11:09:46.000Z",
+    "updatedAt": "2023-06-04T02:10:19.000Z",
+    "pageSchema": {
+      "renderer": "page",
+      "body": [
+        {
+          "renderer": "table",
+          "initApi": {
+            "url": "/antd-users.json",
+            "method": "get"
+          },
+          "columns": [
+            {
+              "renderer": "column",
+              "label": "id",
+              "name": "id"
+            },
+            {
+              "renderer": "column",
+              "label": "定向数据",
+              "body": [
+                {
+                  "renderer": "column",
+                  "label": "数据分析",
+                  "body": [
+                    {
+                      "renderer": "column",
+                      "label": "b1111",
+                      "body": [
+                        {
+                          "renderer": "alert"
+                        }
+                      ]
+                    },
+                    {
+                      "renderer": "column",
+                      "label": "转评赞",
+                      "body": [
+                        {
+                          "renderer": "column",
+                          "label": "like",
+                          "name": "like"
+                        },
+                        {
+                          "renderer": "column",
+                          "label": "title",
+                          "name": "title",
+                          "header": [
+                            {
+                              "renderer": "html",
+                              "html": "Title"
+                            }
+                          ]
+                        },
+                        {
+                          "renderer": "column",
+                          "label": "star",
+                          "name": "star",
+                          "body": [
+                            {
+                              "renderer": "action",
+                              "actionType": "extends",
+                              "triggered": "addRow",
+                              "text": "<%=$.star%>"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "renderer": "column",
+                  "label": "owner",
+                  "name": "owner"
+                },
+                {
+                  "renderer": "column",
+                  "label": "logo",
+                  "name": "logo"
+                }
+              ]
+            },
+            {
+              "renderer": "column",
+              "label": "status",
+              "name": "status"
+            },
+            {
+              "renderer": "column",
+              "label": "cover",
+              "name": "cover"
+            },
+            {
+              "renderer": "column",
+              "label": "percent",
+              "name": "percent"
+            },
+            {
+              "renderer": "column",
+              "label": "content",
+              "name": "content"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

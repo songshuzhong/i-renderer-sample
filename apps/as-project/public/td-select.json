@@ -1,0 +1,73 @@
+{
+  "status": 0,
+  "message": "success",
+  "data": {
+    "rows":[
+      {
+        "start_time": "2023-06-09 00:00:00",
+        "end_time": "2023-06-13 23:59:59",
+        "customer_name": "月亮惹的祸",
+        "deliver_id": "150013302",
+        "imp_cnt": "267",
+        "imp_num": "1",
+        "click_cnt": "80",
+        "click_num": "0",
+        "traned_cnt": "3",
+        "cmt_cnt": "1",
+        "likes_cnt": "1056",
+        "clcted_cnt": "3",
+        "bhv_cnt": "19",
+        "bhv_num": "79"
+      },
+      {
+        "start_time": "2023-06-09 00:00:00",
+        "end_time": "2023-06-13 23:59:59",
+        "customer_name": "心太软",
+        "deliver_id": "150013303",
+        "imp_cnt": "267",
+        "imp_num": "1",
+        "click_cnt": "80",
+        "click_num": "0",
+        "traned_cnt": "3",
+        "cmt_cnt": "1",
+        "likes_cnt": "1056",
+        "clcted_cnt": "3",
+        "bhv_cnt": "19",
+        "bhv_num": "79",
+        "likes_cnt_checked": true
+      },
+      {
+        "start_time": "2023-06-09 00:00:00",
+        "end_time": "2023-06-13 23:59:59",
+        "customer_name": "以父之名",
+        "deliver_id": "150013304",
+        "imp_cnt": "267",
+        "imp_num": "1",
+        "click_cnt": "80",
+        "click_num": "0",
+        "traned_cnt": "3",
+        "cmt_cnt": "1",
+        "likes_cnt": "1056",
+        "clcted_cnt": "3",
+        "bhv_cnt": "19",
+        "bhv_num": "79"
+      },
+      {
+        "start_time": "2023-06-09 00:00:00",
+        "end_time": "2023-06-13 23:59:59",
+        "customer_name": "问",
+        "deliver_id": "150013305",
+        "imp_cnt": "267",
+        "imp_num": "1",
+        "click_cnt": "80",
+        "click_num": "0",
+        "traned_cnt": "3",
+        "cmt_cnt": "1",
+        "likes_cnt": "1056",
+        "clcted_cnt": "3",
+        "bhv_cnt": "19",
+        "bhv_num": "79"
+      }
+    ]
+  }
+}

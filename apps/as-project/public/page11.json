@@ -1,0 +1,391 @@
+{
+  "code": 200,
+  "data": {
+    "pageId": "70f1d2c2-026d-46b6-b81d-520f7f573dbe",
+    "id": 113,
+    "projectId": "4",
+    "pageTitle": "表格项",
+    "pageName": "formTable2",
+    "namespace": "联通",
+    "pageIcon": null,
+    "groupBy": "form",
+    "updatedBy": "admin",
+    "updatedCause": null,
+    "hidden": false,
+    "assets": [],
+    "visible": [
+      8
+    ],
+    "pageDesc": null,
+    "pageSchema": {
+      "renderer": "page",
+      "initData": {
+        "names": "songshuzhong"
+      },
+      "body": [
+        {
+          "renderer": "form",
+          "actionApi": {
+            "url": "https://www.fastmock.site/mock/a93e0b29161761b8153cbc02db04c643/api/form/submit",
+            "params": {},
+            "method": "post"
+          },
+          "initApi": {
+            "url": "/users.json",
+            "method": "get"
+          },
+          "controls": [
+            {
+              "renderer": "input",
+              "name": "names",
+              "label": "姓名",
+              "tip": "请填写姓名",
+              "placeholder": "请填写姓名",
+              "requiredOn": 1,
+              "validType": "normal",
+              "flexible": false
+            },
+            {
+              "renderer": "table",
+              "name": "users",
+              "label": "table",
+              "showExport": true,
+              "height": 402,
+              "initApi": {
+                "url": "",
+                "method": "get",
+                "params": {}
+              },
+              "selectableOn": "data.name!='1345'",
+              "columns": [
+                {
+                  "type": "index"
+                },
+                {
+                  "label": "sex",
+                  "name": "uid",
+                  "body": [
+                    {
+                      "renderer": "radio",
+                      "name": "sex",
+                      "options": [
+                        {
+                          "text": "文案1",
+                          "value": "0",
+                          "disabledOn": ""
+                        },
+                        {
+                          "text": "文案2",
+                          "value": "1",
+                          "disabledOn": ""
+                        }
+                      ],
+                      "editableOn": "$.editable"
+                    }
+                  ],
+                  "align": "center",
+                  "width": "200px"
+                },
+                {
+                  "name": "name",
+                  "label": " rate",
+                  "align": "right",
+                  "width": "200px",
+                  "body": [
+                    {
+                      "renderer": "rate",
+                      "name": "rate",
+                      "allowHalf": false,
+                      "color": [],
+                      "texts": [],
+                      "showText": false,
+                      "showScore": true,
+                      "editableOn": "$.editable"
+                    },
+                    {
+                      "renderer": "colorpicker",
+                      "name": "color",
+                      "editableOn": "$.editable",
+                      "showAlpha": false
+                    }
+                  ],
+                  "header": [
+                    {
+                      "renderer": "html",
+                      "inline": true,
+                      "style": {
+                        "padding-right": "40px"
+                      }
+                    },
+                    {
+                      "renderer": "action",
+                      "icon": "ZoomIn",
+                      "popupType": "over",
+                      "popperWidth": 250,
+                      "popoverTitle": "发生的fees",
+                      "footer": [
+                        {
+                          "renderer": "action",
+                          "text": "取消筛选",
+                          "isText": true,
+                          "actionType": "trigger",
+                          "triggered": "OverForm.reset",
+                          "style": {
+                            "margin-right": "28px"
+                          }
+                        },
+                        {
+                          "renderer": "action",
+                          "text": "取消",
+                          "type": "danger",
+                          "plain": true
+                        },
+                        {
+                          "renderer": "action",
+                          "actionType": "trigger",
+                          "triggered": "OverForm.submit",
+                          "text": "确定"
+                        }
+                      ],
+                      "category": "icon",
+                      "size": 16,
+                      "body": [
+                        {
+                          "renderer": "form",
+                          "controls": [
+                            {
+                              "renderer": "select",
+                              "name": "relation",
+                              "multiple": false,
+                              "options": [
+                                {
+                                  "text": "等于",
+                                  "value": "1",
+                                  "disabledOn": ""
+                                },
+                                {
+                                  "text": "大于",
+                                  "value": "2",
+                                  "disabledOn": ""
+                                },
+                                {
+                                  "text": "小于",
+                                  "value": "3",
+                                  "disabledOn": ""
+                                },
+                                {
+                                  "text": "不等于",
+                                  "value": "4",
+                                  "disabledOn": ""
+                                },
+                                {
+                                  "text": "大于等于",
+                                  "value": "5",
+                                  "disabledOn": ""
+                                },
+                                {
+                                  "text": "小于等于",
+                                  "value": "6",
+                                  "disabledOn": ""
+                                }
+                              ],
+                              "requiredOn": "1"
+                            },
+                            {
+                              "renderer": "input",
+                              "name": "relationValue",
+                              "placeholder": "请输入",
+                              "requiredOn": "1"
+                            }
+                          ],
+                          "submitType": "target",
+                          "target": "users",
+                          "name": "OverForm"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "none",
+                  "align": "center",
+                  "name": "connect",
+                  "label": "connect",
+                  "body": [
+                    {
+                      "renderer": "switch",
+                      "name": "connect",
+                      "editableOn": "$.editable"
+                    },
+                    {
+                      "renderer": "html",
+                      "html": "<%='connect: ' + $.connect%>"
+                    },
+                    {
+                      "renderer": "computed",
+                      "name": "$relation",
+                      "useWorker": false,
+                      "exp": "$.relation",
+                      "deps": [
+                        "relation"
+                      ]
+                    },
+                    {
+                      "renderer": "computed",
+                      "name": "$relationValue",
+                      "useWorker": false,
+                      "exp": "$.relationValue",
+                      "deps": [
+                        "relationValue"
+                      ]
+                    },
+                    {
+                      "renderer": "computed",
+                      "name": "$index",
+                      "useWorker": false,
+                      "exp": "$.index",
+                      "deps": [
+                        "index"
+                      ]
+                    },
+                    {
+                      "renderer": "switch",
+                      "name": "editable",
+                      "hiddenOn": "1==1"
+                    }
+                  ],
+                  "width": "160px"
+                },
+                {
+                  "label": "createdAt",
+                  "name": "createdAt",
+                  "type": "",
+                  "align": "center",
+                  "sortable": true,
+                  "body": [
+                    {
+                      "renderer": "input",
+                      "name": "createdAt",
+                      "label": "createdAt",
+                      "requiredOn": "1==1",
+                      "flexible": false,
+                      "editableOn": "$.editable"
+                    },
+                    {
+                      "renderer": "input",
+                      "name": "richtxt",
+                      "html": "<%=$.richtxt%>",
+                      "type": "textarea",
+                      "flexible": false,
+                      "editableOn": "$.editable"
+                    }
+                  ],
+                  "width": "240px"
+                },
+                {
+                  "label": "updatedAt",
+                  "name": "updatedAt",
+                  "type": "",
+                  "align": "center",
+                  "width": "160px",
+                  "body": [
+                    {
+                      "renderer": "switch",
+                      "label": "adult",
+                      "name": "adult",
+                      "type": "checkbox",
+                      "editableOn": "$.editable"
+                    },
+                    {
+                      "text": "<%=$.createdAt%>",
+                      "renderer": "action",
+                      "isText": true,
+                      "actionType": "dialog",
+                      "body": {
+                        "body": [
+                          {
+                            "renderer": "data"
+                          }
+                        ]
+                      },
+                      "inherit": {
+                        "type": "replace",
+                        "value": []
+                      },
+                      "initData": {}
+                    }
+                  ],
+                  "selectableOn": "",
+                  "sortable": true
+                },
+                {
+                  "header": [
+                    {
+                      "renderer": "action",
+                      "category": "icon",
+                      "icon": "Plus",
+                      "actionType": "extends",
+                      "triggered": "add"
+                    }
+                  ],
+                  "body": [
+                    {
+                      "renderer": "action",
+                      "icon": "Delete",
+                      "actionType": "extends",
+                      "triggered": "delete",
+                      "popupType": "dialog",
+                      "popoverTitle": "确定要删除吗？",
+                      "messageBoxExp": "$.createdAt==2",
+                      "popoverContent": "仅第二条记录允许删除",
+                      "disabledOn": "$.createdAt==3",
+                      "category": "icon",
+                      "inherit": {
+                        "type": "replace",
+                        "value": []
+                      },
+                      "initData": {}
+                    },
+                    {
+                      "renderer": "action",
+                      "category": "icon",
+                      "icon": "ArrowUpBold",
+                      "actionType": "extends",
+                      "triggered": "up"
+                    },
+                    {
+                      "renderer": "action",
+                      "category": "icon",
+                      "icon": "ArrowDownBold",
+                      "actionType": "extends",
+                      "triggered": "down"
+                    }
+                  ],
+                  "selectableOn": ""
+                }
+              ],
+              "updateOnRowId": "uid",
+              "reactive": true,
+              "target": "editable",
+              "linkedOn": "data.createdAt == target.createdAt"
+            },
+            {
+              "renderer": "action",
+              "actionType": "extends",
+              "triggered": "submit",
+              "popupType": "dialog",
+              "messageBoxExp": "1==2",
+              "popoverTitle": "确定提交吗？",
+              "popoverContent": "错误asfda"
+            }
+          ]
+        }
+      ]
+    },
+    "version": 0,
+    "status": 1,
+    "createdAt": "2025-01-25T23:10:51.000Z",
+    "updatedAt": "2025-01-25T23:12:55.000Z"
+  },
+  "describe": "请求成功"
+}

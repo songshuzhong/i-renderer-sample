@@ -1,0 +1,381 @@
+{
+  "data": {
+    "projectId": "2f487a94-34fd-461d-b5e9-1ef3c785840d",
+    "pageId": "82ff7ed5-8350-460d-a512-b7c24d4f86b3",
+    "pageName": "page7",
+    "pageTitle": "Page7",
+    "pageIcon": "",
+    "groupBy": null,
+    "hidden": null,
+    "assets": [],
+    "visible": [],
+    "pageDesc": null,
+    "createdAt": "2023-02-14T11:09:46.000Z",
+    "updatedAt": "2023-06-04T02:10:19.000Z",
+    "pageSchema": {
+      "renderer": "page",
+      "initData": {
+        "rows": [
+          {},
+          {},
+          {},
+          {}
+        ]
+      },
+      "body": [
+        {
+          "renderer": "layout",
+          "body": [
+            {
+              "renderer": "service",
+              "body": [
+                {
+                  "renderer": "skeleton",
+                  "count": 8,
+                  "hasAvatar": true,
+                  "body": [
+                    {
+                      "renderer": "avatar",
+                      "src": "${avatar}",
+                      "shape": "circle",
+                      "borderRadius": 0,
+                      "title": "<%=$.name%>",
+                      "subTitle": "<%=$.signature%>",
+                      "classname": "vertical",
+                      "isComputedSrc": true
+                    },
+                    {
+                      "renderer": "html",
+                      "html": "<%=$.title%>",
+                      "style": {
+                        "font-weight": "900",
+                        "text-align": "center",
+                        "color": "var(--el-color-primary)",
+                        "margin": "26px 0 4px 0"
+                      }
+                    },
+                    {
+                      "renderer": "html",
+                      "html": "<%=$.address%>",
+                      "style": {
+                        "font-weight": "900",
+                        "text-align": "center",
+                        "color": "var(--el-color-primary)",
+                        "margin": "4px 0 18px 0"
+                      }
+                    },
+                    {
+                      "renderer": "divider"
+                    },
+                    {
+                      "renderer": "html",
+                      "html": "标签",
+                      "style": {
+                        "margin-bottom": "20px"
+                      }
+                    },
+                    {
+                      "renderer": "each",
+                      "name": "tags",
+                      "body": [
+                        {
+                          "renderer": "html",
+                          "text": "<%=$.label%>",
+                          "classname": "tag el-tag",
+                          "html": "<%=$.label%>"
+                        }
+                      ],
+                      "classname": "tags"
+                    },
+                    {
+                      "renderer": "divider"
+                    },
+                    {
+                      "renderer": "html",
+                      "style": {
+                        "margin-bottom": "20px"
+                      },
+                      "html": "团队"
+                    },
+                    {
+                      "renderer": "each",
+                      "body": [
+                        {
+                          "renderer": "avatar",
+                          "src": "${logo}",
+                          "size": 36,
+                          "shape": "circle",
+                          "isComputedSrc": true,
+                          "borderRadius": 0,
+                          "subTitle": "<%=$.member%>"
+                        }
+                      ],
+                      "name": "notice",
+                      "classname": "notice"
+                    }
+                  ],
+                  "loadingOn": "!$.name",
+                  "leading": 0,
+                  "trailing": 2000,
+                  "classname": "vertical",
+                  "initVal": false,
+                  "variant": "circle",
+                  "width": 60
+                }
+              ],
+              "initApi": {
+                "url": "/antd-user.json",
+                "method": "get",
+                "cached": false,
+                "debounce": 0,
+                "params": {}
+              },
+              "classname": "me",
+              "style": {
+                "padding": "28px"
+              }
+            },
+            {
+              "renderer": "tabs",
+              "panels": [
+                {
+                  "label": "文章",
+                  "icon": "",
+                  "keepAlive": true,
+                  "header": [
+                    {
+                      "renderer": "html",
+                      "html": "文章"
+                    },
+                    {
+                      "renderer": "badge",
+                      "value": "2",
+                      "type": "primary",
+                      "showZero": true,
+                      "offset": [
+                        "12",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "body": [
+                    {
+                      "renderer": "service",
+                      "initApi": {
+                        "url": "/antd-users.json",
+                        "method": "get",
+                        "cached": false,
+                        "debounce": 0,
+                        "params": {}
+                      },
+                      "body": [
+                        {
+                          "renderer": "each",
+                          "name": "rows",
+                          "body": [
+                            {
+                              "renderer": "skeleton",
+                              "body": [
+                                {
+                                  "renderer": "html",
+                                  "inline": true,
+                                  "html": "<h1><%=$.title%></h1>"
+                                },
+                                {
+                                  "renderer": "render",
+                                  "body": [
+                                    {
+                                      "renderer": "action",
+                                      "text": "Ant Design",
+                                      "type": "info",
+                                      "static": true,
+                                      "size": "small",
+                                      "plain": true
+                                    },
+                                    {
+                                      "renderer": "action",
+                                      "text": "设计语言",
+                                      "static": true,
+                                      "size": "small",
+                                      "plain": true,
+                                      "type": "info"
+                                    },
+                                    {
+                                      "renderer": "action",
+                                      "text": "蚂蚁金服",
+                                      "static": true,
+                                      "size": "small",
+                                      "type": "info",
+                                      "plain": true
+                                    }
+                                  ]
+                                },
+                                {
+                                  "renderer": "html",
+                                  "html": "<%=$.content%>",
+                                  "style": {
+                                    "margin": "12px 0",
+                                    "display": "block"
+                                  },
+                                  "inline": true
+                                },
+                                {
+                                  "renderer": "render",
+                                  "classname": "inline",
+                                  "body": [
+                                    {
+                                      "renderer": "avatar",
+                                      "src": "${avatar}",
+                                      "size": 20,
+                                      "shape": "circle",
+                                      "borderRadius": 0,
+                                      "title": "<%=$.owner%>",
+                                      "isComputedSrc": true
+                                    },
+                                    {
+                                      "renderer": "html",
+                                      "html": "发布在",
+                                      "style": {
+                                        "font-size": "13px",
+                                        "padding-right": "4px"
+                                      },
+                                      "inline": true
+                                    },
+                                    {
+                                      "renderer": "action",
+                                      "text": "<%=$.href%>",
+                                      "isText": true,
+                                      "tag": "a"
+                                    },
+                                    {
+                                      "renderer": "html",
+                                      "html": "<%=$.updatedAt%>",
+                                      "inline": true,
+                                      "style": {
+                                        "padding-left": "20px"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "renderer": "render",
+                                  "classname": "inline",
+                                  "body": [
+                                    {
+                                      "renderer": "render",
+                                      "body": [
+                                        {
+                                          "renderer": "icon",
+                                          "icon": "CameraFilled",
+                                          "bgColor": "#ffffff",
+                                          "reactive": false,
+                                          "size": 16,
+                                          "actionType": "none"
+                                        },
+                                        {
+                                          "renderer": "html",
+                                          "inline": true,
+                                          "html": "<%=$.star%>",
+                                          "style": {
+                                            "margin-left": "4px",
+                                            "margin-right": "10px"
+                                          }
+                                        }
+                                      ],
+                                      "classname": "inline"
+                                    },
+                                    {
+                                      "renderer": "render",
+                                      "classname": "inline",
+                                      "body": [
+                                        {
+                                          "renderer": "icon",
+                                          "icon": "GoldMedal",
+                                          "bgColor": "#ffffff",
+                                          "reactive": false,
+                                          "size": 16,
+                                          "actionType": "none"
+                                        },
+                                        {
+                                          "renderer": "html",
+                                          "inline": true,
+                                          "html": "<%=$.like%>",
+                                          "style": {
+                                            "margin-left": "4px",
+                                            "margin-right": "10px"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "renderer": "render",
+                                      "classname": "inline",
+                                      "body": [
+                                        {
+                                          "renderer": "icon",
+                                          "icon": "Message",
+                                          "bgColor": "#ffffff",
+                                          "reactive": false,
+                                          "size": 16,
+                                          "actionType": "none"
+                                        },
+                                        {
+                                          "renderer": "html",
+                                          "inline": true,
+                                          "html": "<%=$.message%>",
+                                          "style": {
+                                            "margin-left": "4px",
+                                            "margin-right": "10px"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ],
+                              "loadingOn": "!$.id",
+                              "count": 6,
+                              "hasAvatar": false,
+                              "leading": 0,
+                              "trailing": 2000,
+                              "initVal": true
+                            },
+                            {
+                              "renderer": "divider"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "label": "应用",
+                  "icon": "",
+                  "keepAlive": true,
+                  "body": []
+                },
+                {
+                  "label": "项目",
+                  "icon": "",
+                  "keepAlive": true,
+                  "body": []
+                }
+              ],
+              "activeTab": 0,
+              "tabPosition": "top"
+            }
+          ]
+        }
+      ],
+      "innerStyle": ".inline {\r\n  display: flex;\r\n  align-items: center;\r\n  margin-top: 6px;\r\n}\r\n.me {\r\n  width: 30%;\r\n}\r\n.tags {\r\n  .i-each__container__item {\r\n    margin-bottom: 4px;\r\n    display: inline-block;\r\n    color: var(--el-color-success);\r\n  }\r\n  .i-each__container__item + .i-each__container__item {\r\n    margin-left: 4px;\r\n  }\r\n}\r\n.notice {\r\n  .i-each__container__item + .i-each__container__item {\r\n    margin-top: 10px;\r\n  }\r\n}",
+      "classname": "",
+      "mergeUrlQuery": false,
+      "showBacktop": false,
+      "isH5": false,
+      "qa": ""
+    }
+  },
+  "status": 0,
+  "msg": "success"
+}

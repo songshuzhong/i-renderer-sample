@@ -1,0 +1,102 @@
+{
+  "status": 0,
+  "message": "success",
+  "data": {
+    "projectId": "a1ec9e7c-1ca8-48ae-810d-73e3af022144",
+    "pageId": "0c5ddeef-6dbd-4379-8b2b-eeac33807461",
+    "pageName": "campaigns",
+    "pageTitle": "新建计划",
+    "pageIcon": "",
+    "groupBy": "超粉",
+    "hidden": false,
+    "assets": [
+      "https://songshuzhong.github.io/i-assets/public/js/Schedule.394219.min.js"
+    ],
+    "visible": [],
+    "pageDesc": null,
+    "pageSchema": {
+      "renderer": "page",
+      "body": [
+        {
+          "renderer": "card",
+          "body": [
+            {
+              "renderer": "table",
+              "initApi": {
+                "url": "/musics.json",
+                "method": "get",
+                "cached": false,
+                "debounce": 0,
+                "params": {}
+              },
+              "columns": [
+                {
+                  "name": "music_name",
+                  "label": "歌曲名",
+                  "fixed": "left",
+                  "width": "200px",
+                  "align": "center",
+                  "body": [
+                    {
+                      "renderer": "avatar",
+                      "title": "<%=$.music_name%>",
+                      "src": "${music_image}",
+                      "shape": "circle",
+                      "isComputedSrc": true,
+                      "borderRadius": 0
+                    }
+                  ]
+                },
+                {
+                  "name": "singer",
+                  "label": "歌手",
+                  "fixed": "left",
+                  "width": "180px",
+                  "align": "center",
+                  "body": [
+                    {
+                      "renderer": "avatar",
+                      "src": "${singer_image}",
+                      "computedSrc": true,
+                      "shape": "circle",
+                      "isComputedSrc": true,
+                      "borderRadius": 0,
+                      "title": "<%=$.singer%>"
+                    }
+                  ]
+                },
+                {
+                  "name": "public_year",
+                  "label": "发行时间",
+                  "fixed": "left",
+                  "width": "110px",
+                  "align": "center"
+                },
+                {
+                  "name": "play_count",
+                  "label": "播放次数",
+                  "fixed": "left",
+                  "width": "130px",
+                  "align": "center"
+                }
+              ],
+              "border": false,
+              "height": 510,
+              "classname": "musics-table"
+            }
+          ],
+          "classname": "music-card__container",
+          "style": {
+            "width": "661px",
+            "height": "546px"
+          }
+        }
+      ],
+      "innerStyle": ".music-card__container {\r\n  background-size: cover;\r\n  background-report: no-report;\r\n  background-position: center;\r\n  background-image: url(\"https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VTable/media/background-image-music.jpeg\");\r\n  .el-table {\r\n    background: transparent;\r\n    th {\r\n      background: var(--el-color-warning) !important;\r\n      color: var(--el-color-white);\r\n    }\r\n    .el-table__row {\r\n      background: rgba(255,255,255,0.2);\r\n      &.el-table__row--striped {\r\n        background: rgba(255,255,255,0.5);\r\n        .el-table__cell {\r\n          background: transparent;\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n"
+    },
+    "version": 1,
+    "status": 1,
+    "createdAt": "2021-09-25T08:26:54.000Z",
+    "updatedAt": "2023-10-16T02:02:32.000Z"
+  }
+}

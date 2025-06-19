@@ -1,0 +1,238 @@
+{
+  "status": 0,
+  "message": "success",
+  "data": {
+    "pageId": "bfbc45cc-4a8d-4f02-ac7d-0cf2d9929a94",
+    "id": 17,
+    "projectId": "4",
+    "pageTitle": "单元格选择",
+    "pageName": "tdSelect",
+    "namespace": "联通",
+    "pageIcon": "",
+    "groupBy": "crud",
+    "updatedBy": "admin",
+    "updatedCause": null,
+    "hidden": null,
+    "assets": [],
+    "visible": null,
+    "pageDesc": null,
+    "pageSchema": {
+      "renderer": "page",
+      "body": [
+        {
+          "renderer": "table",
+          "name": "TableTdSelect",
+          "initApi": {
+            "url": "/td-select.json",
+            "method": "get",
+            "params": {
+              "dates": "${dates}"
+            }
+          },
+          "height": 590,
+          "columns": [
+            {
+              "label": "企业",
+              "name": "customer_name",
+              "sortable": false,
+              "fixed": false,
+              "type": "-",
+              "align": "none",
+              "body": []
+            },
+            {
+              "label": "PV",
+              "name": "imp_cnt",
+              "sortable": false,
+              "fixed": false,
+              "type": "-",
+              "align": "none",
+              "body": []
+            },
+            {
+              "label": "UV",
+              "name": "imp_num",
+              "sortable": false,
+              "fixed": false,
+              "type": "-",
+              "align": "none",
+              "body": []
+            },
+            {
+              "label": "点击量",
+              "name": "click_cnt",
+              "sortable": false,
+              "fixed": false,
+              "type": "-",
+              "align": "none",
+              "header": [
+                {
+                  "renderer": "switch",
+                  "name": "click_cnt_checked",
+                  "type": "checkbox",
+                  "visibleOn": "data.showCheckbox",
+                  "classname": "td-select__check-all",
+                  "inlinePrompt": false,
+                  "triggered": "header_cnt",
+                  "rules": []
+                },
+                {
+                  "renderer": "html",
+                  "html": "点击量",
+                  "classname": "td-select__check-label"
+                }
+              ],
+              "body": [
+                {
+                  "renderer": "switch",
+                  "name": "click_cnt_checked",
+                  "type": "checkbox",
+                  "visibleOn": "data.showCheckbox",
+                  "inlinePrompt": false,
+                  "groupName": "header_cnt",
+                  "rules": []
+                },
+                {
+                  "renderer": "html",
+                  "inline": true,
+                  "html": "<%=data.click_cnt%>",
+                  "classname": "td-select__check-label"
+                }
+              ]
+            },
+            {
+              "label": "点赞量",
+              "name": "likes_cnt",
+              "sortable": false,
+              "fixed": false,
+              "type": "-",
+              "align": "none",
+              "header": [
+                {
+                  "renderer": "switch",
+                  "name": "likes_cnt_checked",
+                  "type": "checkbox",
+                  "visibleOn": "data.showCheckbox",
+                  "classname": "td-select__check-all",
+                  "inlinePrompt": false,
+                  "triggered": "header_likes",
+                  "rules": []
+                },
+                {
+                  "renderer": "html",
+                  "html": "点赞量",
+                  "classname": "td-select__check-label"
+                }
+              ],
+              "body": [
+                {
+                  "renderer": "switch",
+                  "name": "likes_cnt_checked",
+                  "type": "checkbox",
+                  "visibleOn": "data.showCheckbox",
+                  "inlinePrompt": false,
+                  "groupName": "header_likes",
+                  "rules": []
+                },
+                {
+                  "renderer": "html",
+                  "inline": true,
+                  "html": "<%=data.likes_cnt%>",
+                  "classname": "td-select__check-label"
+                }
+              ]
+            },
+            {
+              "label": "评论数",
+              "name": "clcted_cnt",
+              "sortable": false,
+              "fixed": false,
+              "type": "-",
+              "align": "none",
+              "body": [
+                {
+                  "renderer": "switch",
+                  "name": "clcted_cnt_checked",
+                  "type": "checkbox",
+                  "visibleOn": "data.showCheckbox"
+                },
+                {
+                  "renderer": "html",
+                  "inline": true,
+                  "html": "<%=data.clcted_cnt%>",
+                  "classname": "td-select__check-label"
+                }
+              ]
+            },
+            {
+              "label": "转发数",
+              "name": "bhv_num",
+              "sortable": false,
+              "fixed": false,
+              "type": "-",
+              "align": "none",
+              "body": []
+            },
+            {
+              "label": "开始时间",
+              "name": "start_time",
+              "sortable": false,
+              "fixed": false,
+              "type": "-",
+              "align": "none",
+              "body": []
+            },
+            {
+              "label": "结束时间",
+              "name": "end_time",
+              "sortable": false,
+              "fixed": false,
+              "type": "-",
+              "align": "none",
+              "body": []
+            }
+          ],
+          "actions": [
+            {
+              "renderer": "switch",
+              "name": "showCheckbox",
+              "type": "button",
+              "target": "TableTdSelect",
+              "defaultValue": false,
+              "size": "small",
+              "activeText": "取消",
+              "inactiveText": "选择单元格",
+              "rules": []
+            },
+            {
+              "renderer": "action",
+              "text": "生成推送任务",
+              "plain": true,
+              "size": "small",
+              "actionType": "ajax",
+              "actionApi": {
+                "url": "/api/selectedRows",
+                "method": "post",
+                "params": {
+                  "*": "*"
+                }
+              },
+              "body": {},
+              "disabledOn": "!data.selectedRows.length || !data.showCheckbox"
+            }
+          ],
+          "rowKey": "deliver_id",
+          "title": "点击按钮，单元格进入选中态"
+        }
+      ],
+      "mergeUrlQuery": true,
+      "steps": [],
+      "innerStyle": ".td-select__check-label {\n  display: inline;\n  vertical-align: text-bottom;\n}\n.td-select__check-all {\n  height: 23px;\n  display: inline;\n}",
+      "initData": {}
+    },
+    "version": 0,
+    "status": 1,
+    "createdAt": "2023-11-25T15:20:33.000Z",
+    "updatedAt": "2023-11-25T15:20:33.000Z"
+  }
+}

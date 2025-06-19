@@ -1,0 +1,39 @@
+{
+  "code": 0,
+  "data": {
+    "projectId": "2f487a94-34fd-461d-b5e9-1ef3c785840d",
+    "pageId": "82ff7ed5-8350-460d-a512-b7c24d4f86b3",
+    "pageName": "page7",
+    "pageTitle": "Page7",
+    "pageIcon": "",
+    "groupBy": null,
+    "hidden": null,
+    "assets": [],
+    "visible": [],
+    "pageDesc": null,
+    "createdAt": "2023-02-14T11:09:46.000Z",
+    "updatedAt": "2023-06-04T02:10:19.000Z",
+    "pageSchema": {
+      "renderer": "page",
+      "body": [
+        {
+          "renderer": "split",
+          "direction": "vertical",
+          "header": {
+            "renderer": "split",
+            "header": {
+              "renderer": "alert"
+            },
+            "footer": {
+              "renderer": "action"
+            }
+          },
+          "footer": {
+            "renderer": "avatar"
+          }
+        }
+      ]
+    }
+  },
+  "message": "success"
+}

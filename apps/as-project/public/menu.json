@@ -1,0 +1,563 @@
+{
+    "code": 200,
+    "data": {
+        "menu": [
+            {
+                "renderer": "submenu",
+                "name": "demo",
+                "title": "案例项目",
+                "icon": "Star",
+                "body": [
+                    {
+                        "renderer": "menuitem",
+                        "name": "form",
+                        "title": "表单",
+                        "icon": "",
+                        "pageId": "7fe82cb4-4156-4897-a6f1-82cd8e1cc9f5",
+                        "groupBy": "form",
+                        "hidden": null,
+                        "visible": [
+                            0
+                        ],
+                        "assets": [
+                            "https://songshuzhong.github.io/i-assets/public/js/spark-md5.min.js",
+                            "https://songshuzhong.github.io/i-assets/public/js/Schedule.394219.min.js",
+                            "https://songshuzhong.github.io/i-assets/public/js/Richtxt.fca61a.min.js?version=1.0.1"
+                        ],
+                        "pageDesc": null,
+                        "schemaUrl": "/page.json"
+                    },
+                    {
+                        "renderer": "menuitem",
+                        "name": "formDisabled",
+                        "title": "表单禁用",
+                        "icon": "",
+                        "pageId": "96932910-8814-4428-b4e1-f2a91785da0b",
+                        "groupBy": "form",
+                        "hidden": null,
+                        "visible": [
+                            0
+                        ],
+                        "assets": [
+                            "https://songshuzhong.github.io/i-assets/public/js/Schedule.394219.min.js",
+                            "https://songshuzhong.github.io/i-assets/public/js/Richtxt.fca61a.min.js?version=1.0.1"
+                        ],
+                        "pageDesc": null,
+                        "schemaUrl": "/page1.json"
+                    },
+                    {
+                        "renderer": "menuitem",
+                        "name": "foldingForm",
+                        "title": "表单折叠",
+                        "icon": "",
+                        "pageId": "9898b4da-37c2-44a6-8fe4-3a13b2d33df6",
+                        "groupBy": "form",
+                        "hidden": null,
+                        "visible": [
+                            0
+                        ],
+                        "assets": [
+                            "https://songshuzhong.github.io/i-assets/public/js/Extable.f868ed.min.js"
+                        ],
+                        "pageDesc": null,
+                        "schemaUrl": "/page2.json"
+                    },
+                    {
+                        "renderer": "menuitem",
+                        "name": "steps",
+                        "title": "引导",
+                        "icon": "",
+                        "pageId": "fc3a856e-46ff-4012-a1e7-70677a98d29c",
+                        "groupBy": "form",
+                        "hidden": null,
+                        "visible": [
+                            0
+                        ],
+                        "assets": [],
+                        "pageDesc": null,
+                        "schemaUrl": "/chart.json"
+                    },
+                    {
+                        "renderer": "menuitem",
+                        "name": "query/:id/:name",
+                        "title": "参数",
+                        "icon": "",
+                        "pageId": "fc3a856e-46ff-4012-a1e7-70677a98d29c",
+                        "groupBy": "form",
+                        "hidden": null,
+                        "visible": [
+                            0
+                        ],
+                        "assets": [],
+                        "pageDesc": null,
+                        "schemaUrl": "/page19.json"
+                    },
+                    {
+                        "renderer": "menuitem",
+                        "name": "upload",
+                        "title": "上传",
+                        "icon": "",
+                        "pageId": "fc3a856e-46ff-4012-a1e7-70677a98d29c",
+                        "groupBy": "form",
+                        "hidden": null,
+                        "visible": [
+                            0
+                        ],
+                        "assets": [],
+                        "pageDesc": null,
+                        "schemaUrl": "/page19.json"
+                    },
+                    {
+                        "renderer": "menuitem",
+                        "name": "inputValid",
+                        "title": "校验",
+                        "icon": "",
+                        "pageId": "3381e12c-a587-47bb-8874-71055f0f11df",
+                        "groupBy": "form",
+                        "hidden": null,
+                        "visible": [
+                            0
+                        ],
+                        "assets": [],
+                        "pageDesc": null,
+                        "schemaUrl": "/page4.json"
+                    },
+                    {
+                        "renderer": "menuitem",
+                        "name": "comboPerformance",
+                        "title": "组合性能",
+                        "icon": "",
+                        "pageId": "70428cf7-c5b2-472d-b670-d3e9542b2f4d",
+                        "groupBy": "form",
+                        "hidden": null,
+                        "visible": [
+                            0
+                        ],
+                        "assets": [],
+                        "pageDesc": null,
+                        "schemaUrl": "/page5.json"
+                    },
+                    {
+                        "renderer": "menuitem",
+                        "name": "comboPlus",
+                        "title": "组合功能",
+                        "icon": "",
+                        "pageId": "ffc87f9e-d008-4ee5-99b2-dd0734fea6cb",
+                        "groupBy": "form",
+                        "hidden": null,
+                        "visible": [
+                            0
+                        ],
+                        "assets": [],
+                        "pageDesc": null,
+                        "schemaUrl": "/page6.json"
+                    },
+                    {
+                        "renderer": "menuitem",
+                        "name": "services",
+                        "title": "服务",
+                        "icon": "",
+                        "pageId": "2cfb7da9-b9fc-42e5-b3c6-412b913a2804",
+                        "groupBy": "",
+                        "hidden": null,
+                        "visible": [
+                            0
+                        ],
+                        "assets": [],
+                        "pageDesc": null,
+                        "schemaUrl": "/page7.json"
+                    },
+                    {
+                        "renderer": "menuitem",
+                        "name": "cards",
+                        "title": "卡片列表",
+                        "icon": "",
+                        "pageId": "f2f9da99-dd99-4ee1-b227-e821e61d1939",
+                        "groupBy": "crud",
+                        "hidden": null,
+                        "visible": [
+                            0
+                        ],
+                        "assets": [],
+                        "pageDesc": null,
+                        "schemaUrl": "/page8.json"
+                    },
+                    {
+                        "renderer": "menuitem",
+                        "name": "dataColumn",
+                        "title": "数据列",
+                        "icon": "",
+                        "pageId": "c85640d1-fe0b-46da-ad95-71b9a4e05f6b",
+                        "groupBy": "crud",
+                        "hidden": null,
+                        "visible": [
+                            0
+                        ],
+                        "assets": [],
+                        "pageDesc": null,
+                        "schemaUrl": "/page9.json"
+                    },
+                    {
+                        "renderer": "menuitem",
+                        "name": "sheet",
+                        "title": "表格",
+                        "icon": "",
+                        "pageId": "d50ffc69-3e09-41d7-a50e-a0342e16cdd3",
+                        "groupBy": "crud",
+                        "hidden": null,
+                        "visible": [
+                            0
+                        ],
+                        "assets": [],
+                        "pageDesc": null,
+                        "schemaUrl": "/page10.json"
+                    },
+                    {
+                        "renderer": "menuitem",
+                        "name": "list",
+                        "title": "列表",
+                        "icon": "",
+                        "pageId": "b021f6ff-a7e1-448b-ac6b-3da19a06d258",
+                        "groupBy": "crud",
+                        "hidden": null,
+                        "visible": [
+                            0
+                        ],
+                        "assets": [],
+                        "pageDesc": null,
+                        "schemaUrl": "/page18.json"
+                    },
+                    {
+                        "renderer": "menuitem",
+                        "name": "virtuleList",
+                        "title": "虚拟列表",
+                        "icon": "",
+                        "pageId": "fde6bd44-d592-4f27-b809-f9fd027d84ba",
+                        "groupBy": "crud",
+                        "hidden": null,
+                        "visible": [
+                            0
+                        ],
+                        "assets": [],
+                        "pageDesc": null,
+                        "schemaUrl": "/api/page/fde6bd44-d592-4f27-b809-f9fd027d84ba"
+                    },
+                    {
+                        "renderer": "menuitem",
+                        "name": "sheetMerge",
+                        "title": "单元格合并",
+                        "icon": "",
+                        "pageId": "2ccde496-7d68-45ec-be1f-735e2b5da59a",
+                        "groupBy": "crud",
+                        "hidden": null,
+                        "visible": [
+                            0
+                        ],
+                        "assets": [],
+                        "pageDesc": null,
+                        "schemaUrl": "/page13.json"
+                    },
+                    {
+                        "renderer": "menuitem",
+                        "name": "tdSelect",
+                        "title": "单元格选择",
+                        "icon": "",
+                        "pageId": "bfbc45cc-4a8d-4f02-ac7d-0cf2d9929a94",
+                        "groupBy": "crud",
+                        "hidden": null,
+                        "visible": [
+                            0
+                        ],
+                        "assets": [],
+                        "pageDesc": null,
+                        "schemaUrl": "/page17.json"
+                    },
+                    {
+                        "renderer": "menuitem",
+                        "name": "tasks",
+                        "title": "单行任务",
+                        "icon": "",
+                        "pageId": "030acc1b-5401-4189-86e9-e989fa8b3404",
+                        "groupBy": "crud",
+                        "hidden": null,
+                        "visible": [
+                            0
+                        ],
+                        "assets": [],
+                        "pageDesc": null,
+                        "schemaUrl": "/home.json"
+                    },
+                    {
+                        "renderer": "menuitem",
+                        "name": "tasksPlus",
+                        "title": "多行任务",
+                        "icon": "",
+                        "pageId": "fa5efa68-8e4f-4eb6-a633-cff9cda9c407",
+                        "groupBy": "crud",
+                        "hidden": null,
+                        "visible": [
+                            0
+                        ],
+                        "assets": [],
+                        "pageDesc": null,
+                        "schemaUrl": "/api/page/fa5efa68-8e4f-4eb6-a633-cff9cda9c407"
+                    },
+                    {
+                        "renderer": "menuitem",
+                        "name": "activities",
+                        "title": "活动页",
+                        "icon": "",
+                        "pageId": "e6082431-2c79-4c70-82a6-3f8378af90b3",
+                        "groupBy": "h5",
+                        "hidden": null,
+                        "visible": [
+                            0
+                        ],
+                        "assets": [
+                            "https://songshuzhong.github.io/i-assets/public/js/Bridge.838e82.min.js?version=1.0.8"
+                        ],
+                        "pageDesc": null,
+                        "schemaUrl": "/api/page/e6082431-2c79-4c70-82a6-3f8378af90b3"
+                    },
+                    {
+                        "renderer": "menuitem",
+                        "name": "placard",
+                        "title": "海报",
+                        "icon": "",
+                        "pageId": "c264c4e7-1fa8-43b1-bd38-d87cfd0be4e9",
+                        "groupBy": "h5",
+                        "hidden": null,
+                        "visible": [
+                            0
+                        ],
+                        "assets": [],
+                        "pageDesc": null,
+                        "schemaUrl": "/api/page/c264c4e7-1fa8-43b1-bd38-d87cfd0be4e9"
+                    },
+                    {
+                        "renderer": "menuitem",
+                        "name": "shoppingcart",
+                        "title": "商城",
+                        "icon": "",
+                        "pageId": "a6c047bb-ced5-4f5b-912b-4984eca059fe",
+                        "groupBy": "h5",
+                        "hidden": null,
+                        "visible": [
+                            0
+                        ],
+                        "assets": [],
+                        "pageDesc": null,
+                        "schemaUrl": "/api/page/a6c047bb-ced5-4f5b-912b-4984eca059fe"
+                    },
+                    {
+                        "renderer": "menuitem",
+                        "name": "home",
+                        "title": "统计",
+                        "icon": "",
+                        "pageId": "fb924838-8837-4af5-b62c-8b7d5ee79a87",
+                        "groupBy": "图表",
+                        "hidden": null,
+                        "visible": [
+                            0
+                        ],
+                        "assets": [
+                            "https://songshuzhong.github.io/i-assets/public/lib/china.js"
+                        ],
+                        "pageDesc": null,
+                        "schemaUrl": "/page3.json"
+                    },
+                    {
+                        "renderer": "menuitem",
+                        "name": "animation",
+                        "title": "内置动画",
+                        "icon": "",
+                        "pageId": "419c3641-a47d-44b8-9c97-2c06dbd1d2b3",
+                        "groupBy": "",
+                        "hidden": null,
+                        "visible": [
+                            0
+                        ],
+                        "assets": [],
+                        "pageDesc": null,
+                        "schemaUrl": "/page16.json"
+                    },
+                    {
+                        "renderer": "menuitem",
+                        "name": "covid",
+                        "title": "疫情分布",
+                        "icon": null,
+                        "pageId": "90ecb56c-e0b5-443f-a282-5095923d7f0e",
+                        "groupBy": "图表",
+                        "hidden": false,
+                        "visible": [],
+                        "assets": [
+                            "https://songshuzhong.github.io/i-assets/public/lib/china.js",
+                            "https://songshuzhong.github.io/i-assets/public/lib/hk.js"
+                        ],
+                        "pageDesc": null,
+                        "schemaUrl": "/page15.json"
+                    },
+                    {
+                        "renderer": "menuitem",
+                        "name": "tabForm",
+                        "title": "分割面板",
+                        "icon": null,
+                        "pageId": "3ddedb2a-1cb5-49cb-888f-d992c6186477",
+                        "groupBy": "form",
+                        "hidden": false,
+                        "visible": [],
+                        "assets": [],
+                        "pageDesc": null,
+                        "schemaUrl": "/split.json"
+                    },
+                    {
+                        "renderer": "menuitem",
+                        "name": "login",
+                        "title": "销量",
+                        "icon": null,
+                        "pageId": "e3b2507b-4092-433e-aa9c-87581d81a54e",
+                        "groupBy": "form",
+                        "hidden": false,
+                        "visible": [],
+                        "assets": [],
+                        "pageDesc": null,
+                        "schemaUrl": "/page14.json"
+                    },
+                    {
+                        "renderer": "menuitem",
+                        "name": "formStressTest",
+                        "title": "表单压测",
+                        "icon": null,
+                        "pageId": "70c7b1de-0d55-46f2-8246-61c53a820661",
+                        "groupBy": "form",
+                        "hidden": false,
+                        "visible": [],
+                        "assets": [],
+                        "pageDesc": null,
+                        "schemaUrl": "/page11.json"
+                    },
+                    {
+                        "renderer": "menuitem",
+                        "name": "tableStressTest",
+                        "title": "表格压测",
+                        "icon": null,
+                        "pageId": "6989283c-50b6-491a-8f35-95387b287246",
+                        "groupBy": "crud",
+                        "hidden": false,
+                        "visible": [],
+                        "assets": [],
+                        "pageDesc": null,
+                        "schemaUrl": "/page12.json"
+                    }
+                ]
+            },
+            {
+                "renderer": "submenu",
+                "name": "system",
+                "title": "系统配置",
+                "icon": "Operation",
+                "body": [
+                    {
+                        "renderer": "menuitem",
+                        "name": "profile",
+                        "title": "个人中心",
+                        "icon": "",
+                        "pageId": "ae205f05-b6d8-484c-b50a-d063e4c10747",
+                        "groupBy": "",
+                        "hidden": "",
+                        "visible": [],
+                        "assets": "[]",
+                        "pageDesc": "",
+                        "permission": -8,
+                        "schemaUrl": "/api/page/ae205f05-b6d8-484c-b50a-d063e4c10747"
+                    },
+                    {
+                        "renderer": "menuitem",
+                        "name": "users",
+                        "title": "用户管理",
+                        "icon": "",
+                        "pageId": "4e8adeac-f081-4621-bdba-29ed8e0917fe",
+                        "groupBy": "",
+                        "hidden": "",
+                        "visible": [],
+                        "assets": "[]",
+                        "pageDesc": "",
+                        "permission": 0,
+                        "schemaUrl": "/api/page/4e8adeac-f081-4621-bdba-29ed8e0917fe"
+                    },
+                    {
+                        "renderer": "menuitem",
+                        "name": "projects",
+                        "title": "项目管理",
+                        "icon": "",
+                        "pageId": "18a612bf-d063-42b4-8720-0875b6983946",
+                        "groupBy": "",
+                        "hidden": "",
+                        "visible": [],
+                        "assets": "[]",
+                        "pageDesc": "",
+                        "permission": -4,
+                        "schemaUrl": "/api/page/18a612bf-d063-42b4-8720-0875b6983946"
+                    },
+                    {
+                        "renderer": "menuitem",
+                        "name": "pages",
+                        "title": "页面管理",
+                        "icon": "",
+                        "pageId": "ffe4aede-ba56-4bb0-8673-48917154a175",
+                        "groupBy": "",
+                        "hidden": "",
+                        "visible": [],
+                        "assets": "[]",
+                        "pageDesc": "",
+                        "permission": -1,
+                        "schemaUrl": "/api/page/ffe4aede-ba56-4bb0-8673-48917154a175"
+                    },
+                    {
+                        "renderer": "menuitem",
+                        "name": "roles",
+                        "title": "角色管理",
+                        "icon": "",
+                        "pageId": "4b293893-d760-4997-b0f4-4d151939acc5",
+                        "groupBy": "",
+                        "hidden": "",
+                        "visible": [],
+                        "assets": "[]",
+                        "pageDesc": "",
+                        "permission": -2,
+                        "schemaUrl": "/api/page/4b293893-d760-4997-b0f4-4d151939acc5"
+                    },
+                    {
+                        "renderer": "menuitem",
+                        "name": "permissions",
+                        "title": "权限管理",
+                        "icon": "",
+                        "pageId": "04ea58fb-d980-4acb-8fb2-cc43747c4a1e",
+                        "groupBy": "",
+                        "hidden": "",
+                        "visible": [],
+                        "assets": "[]",
+                        "pageDesc": "",
+                        "permission": -3,
+                        "schemaUrl": "/api/page/04ea58fb-d980-4acb-8fb2-cc43747c4a1e"
+                    },
+                    {
+                        "renderer": "menuitem",
+                        "name": "mock",
+                        "title": "模拟数据",
+                        "icon": "",
+                        "pageId": "2c4d3843-323d-42cb-ba10-fe37fda8d7d0",
+                        "groupBy": "",
+                        "hidden": "",
+                        "visible": [],
+                        "assets": "[]",
+                        "pageDesc": "",
+                        "permission": -7,
+                        "schemaUrl": "/api/page/2c4d3843-323d-42cb-ba10-fe37fda8d7d0"
+                    }
+                ]
+            }
+        ]
+    },
+    "describe": "请求成功"
+}

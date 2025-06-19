@@ -1,0 +1,170 @@
+{
+  "data": {
+    "projectId": "2f487a94-34fd-467d-b5e9-1ef3c785840d",
+    "pageId": "7150da9a-db53-4c3c-9a2a-35250985cefd",
+    "pageName": "homeBody",
+    "pageTitle": "简约官网",
+    "pageIcon": "",
+    "groupBy": "",
+    "hidden": false,
+    "assets": [
+      "http://www.i-renderer.love/javascript/Issues.177a4b.min.js",
+      "http://www.i-renderer.love/javascript/Particle.6d8915.min.js"
+    ],
+    "visible": [],
+    "pageDesc": null,
+    "pageSchema": {
+      "renderer": "layout",
+      "direction": "vertical",
+      "body": [
+        {
+          "renderer": "particle",
+          "lazy": true,
+          "r": 15,
+          "height": 509,
+          "classname": "i-home__particle"
+        },
+        {
+          "renderer": "wrapper",
+          "classname": "i-home__ball"
+        },
+        {
+          "renderer": "wrapper",
+          "classname": "i-home__ball"
+        },
+        {
+          "renderer": "wrapper",
+          "classname": "i-home__ball"
+        },
+        {
+          "renderer": "grid",
+          "span": 12,
+          "gutter": 30,
+          "classname": "i-home__banner__container",
+          "body": [
+            {
+              "renderer": "wrapper",
+              "classname": "i-home__banner__wrapper",
+              "body": [
+                {
+                  "renderer": "html",
+                  "classname": "i-home__banner__title",
+                  "html": "百搭云"
+                },
+                {
+                  "renderer": "html",
+                  "classname": "i-home__banner__desc",
+                  "html": "百搭云是基于Vue框架和ElementPlus组件库研发的用于快速搭建企业级信息管理系统的低代码平台，用来帮助开发者聚焦业务，提高开发效率，节省研发成本。"
+                },
+                {
+                  "renderer": "action",
+                  "round": true,
+                  "text": "即刻体验",
+                  "actionType": "url",
+                  "classname": "i-breathe-border",
+                  "url": "/playground"
+                },
+                {
+                  "renderer": "action",
+                  "type": "success",
+                  "plain": true,
+                  "round": true,
+                  "text": "登录",
+                  "actionType": "url",
+                  "url": "localhost/login",
+                  "params": {
+                    "blank": true
+                  }
+                }
+              ]
+            },
+            {
+              "renderer": "carousel",
+              "height": 400,
+              "classname": "i-home__carousel",
+              "autoplay": true,
+              "loop": true,
+              "body": [
+                {
+                  "renderer": "wrapper",
+                  "classname": "i-home__carousel__item",
+                  "body": [
+                    {
+                      "renderer": "image",
+                      "src": "http://www.i-renderer.love/images/f51d8338a344b5e356aa382db8c75e6b.png",
+                      "previews": [
+                        "https://songshuzhong.github.io/i-assets/public/img/action.png",
+                        "https://songshuzhong.github.io/i-assets/public/img/initApi.png",
+                        "https://songshuzhong.github.io/i-assets/public/img/columns.png"
+                      ]
+                    },
+                    {
+                      "renderer": "html",
+                      "html": "自带编辑器与文档，了解css、javascript即可上手"
+                    },
+                    {
+                      "renderer": "action",
+                      "text": "了解详情",
+                      "actionType": "url",
+                      "url": "https://songshuzhong.github.io/i-website/dist/index.html#/demo/inputValid"
+                    }
+                  ]
+                },
+                {
+                  "renderer": "wrapper",
+                  "classname": "i-home__carousel__item",
+                  "body": [
+                    {
+                      "renderer": "image",
+                      "src": "http://www.i-renderer.love/images/c5a361eb0b4da37778426f713e33fa9c.png",
+                      "previews": [
+                        "https://songshuzhong.github.io/i-assets/public/img/action.png"
+                      ]
+                    },
+                    {
+                      "renderer": "html",
+                      "html": "丰富的组件库支持，更加自由的搭配组合网页"
+                    },
+                    {
+                      "renderer": "action",
+                      "text": "了解详情",
+                      "actionType": "url",
+                      "url": "https://songshuzhong.github.io/i-website/dist/index.html#/market/plugins"
+                    }
+                  ]
+                },
+                {
+                  "renderer": "wrapper",
+                  "classname": "i-home__carousel__item",
+                  "body": [
+                    {
+                      "renderer": "image",
+                      "src": "http://www.i-renderer.love/images/ddb946d21a59a2ce7d176ec2cada130d.png",
+                      "previews": [
+                        "https://songshuzhong.github.io/i-assets/public/img/errors.png"
+                      ]
+                    },
+                    {
+                      "renderer": "html",
+                      "html": "让开发体验更贴心、美好"
+                    },
+                    {
+                      "renderer": "action",
+                      "text": "了解详情",
+                      "actionType": "url",
+                      "url": "https://songshuzhong.github.io/i-website/dist/index.html#/demo/inputValid"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "createdAt": "2023-05-26T06:06:36.000Z",
+    "updatedAt": "2023-06-10T03:25:04.000Z"
+  },
+  "status": 0,
+  "msg": "请求成功"
+}

@@ -1,0 +1,36 @@
+{
+  "code": 0,
+  "data": {
+    "projectId": "2f487a94-34fd-461d-b5e9-1ef3c785840d",
+    "pageId": "82ff7ed5-8350-460d-a512-b7c24d4f86b3",
+    "pageName": "page7",
+    "pageTitle": "Page7",
+    "pageIcon": "",
+    "groupBy": null,
+    "hidden": null,
+    "assets": [],
+    "visible": [],
+    "pageDesc": null,
+    "createdAt": "2023-02-14T11:09:46.000Z",
+    "updatedAt": "2023-06-04T02:10:19.000Z",
+    "pageSchema": {
+      "renderer": "page",
+      "body": [
+        {
+          "renderer": "table",
+          "initApi": {
+            "url": "/osp.json",
+            "method": "get",
+            "cached": false,
+            "debounce": 0,
+            "params": {}
+          },
+          "columns": [],
+          "title": "来自osp接口"
+        }
+      ],
+      "res": "if (url.includes('osp.json')) {\r\n  res.data.count = 18;\r\n  res.data.columns = Object.keys(res.data.ResponseObject.dataSetMap.BSUSER.rowSetArray[0].dataMap).map(i => ({label:i, name: i,width: '180px'}));\r\n  res.data.rows = res.data.ResponseObject.dataSetMap.BSUSER.rowSetArray.map(i => i.dataMap);\r\n}"
+    }
+  },
+  "message": "success"
+}

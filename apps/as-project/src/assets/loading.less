@@ -1,0 +1,47 @@
+.i-website__router__loader {
+  height: 2px;
+  top: 0;
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: var(--el-color-primary);
+    transform-origin: 0 50%;
+    animation: grow 1600ms ease-out;
+  }
+  .el-loading-spinner {
+    top: 30px;
+    cursor: not-allowed;
+    .circular {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: unset;
+      height: 25px !important;
+      width: 25px !important;
+      display: inline;
+      background-position: center;
+      background-size: cover;
+      animation: loading-rotate 2s linear infinite;
+      transform: unset;
+    }
+    .path {
+      display: block;
+      animation: loading-dash 1.5s ease-in-out infinite;
+      stroke-dasharray: 90,150;
+      stroke-dashoffset: 0;
+      stroke-width: 4;
+      stroke: var(--el-color-primary);
+      stroke-linecap: round;
+    }
+  }
+}
+@keyframes grow {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}

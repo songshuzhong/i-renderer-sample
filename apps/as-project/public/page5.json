@@ -1,0 +1,340 @@
+{
+    "data": {
+      "projectId": "2f487a94-34fd-467d-b5e9-1ef3c785840d",
+      "pageId": "82ff7ed5-8350-460d-a51c-b7c24d4f86b3",
+      "pageName": "createPage",
+      "pageTitle": "API",
+      "pageIcon": "",
+      "groupBy": null,
+      "hidden": null,
+      "assets": [],
+      "visible": [],
+      "pageDesc": null,
+      "pageSchema": {
+        "renderer": "page",
+        "body": [
+          {
+            "renderer": "form",
+            "name": "FFFFA",
+            "controls": [
+              {
+                "renderer": "select",
+                "name": "as",
+                "label": "as",
+                "placeholder": "请输入",
+                "multiple": false,
+                "optionConfig": {},
+                "options": [
+                  {
+                    "text": "文案1",
+                    "value": "value1",
+                    "disabledOn": ""
+                  },
+                  {
+                    "text": "文案1a",
+                    "value": "value1a",
+                    "disabledOn": ""
+                  }
+                ],
+                "rules": [
+                  {
+                    "type": "exp",
+                    "exp": "$.as === 'value1'",
+                    "message": "文案1不可用",
+                    "trigger": "blur"
+                  }
+                ],
+                "body": {
+                  "renderer": "html",
+                  "html": "<div><%=$.text + '_option_' + $.value%></div>"
+                },
+                "footer": [
+                  {
+                    "renderer": "action",
+                    "text": "dfdfdfdfdfd1212",
+                    "actionType": "dialog",
+                    "body": {
+                      "body": [
+                        {
+                          "renderer": "form",
+                          "controls": [
+                            {
+                              "renderer": "alert",
+                              "title": "<%=$.set=='value1'?'点击左侧列表可设置高级查询条件': '点击左侧列表可使用保存的查询方案'%>",
+                              "type": "success",
+                              "showIcon": true,
+                              "effect": "dark",
+                              "closable": true
+                            },
+                            {
+                              "renderer": "segmented",
+                              "name": "set",
+                              "options": [
+                                {
+                                  "text": "文案1",
+                                  "value": "value1",
+                                  "disabledOn": "",
+                                  "label": "文案1"
+                                },
+                                {
+                                  "text": "文案12",
+                                  "value": "value12",
+                                  "disabledOn": "",
+                                  "label": "文案12"
+                                }
+                              ],
+                              "rules": []
+                            },
+                            {
+                              "renderer": "wrapper",
+                              "body": [
+                                {
+                                  "renderer": "form",
+                                  "name": "ComboFormData",
+                                  "controls": [
+                                    {
+                                      "renderer": "combo",
+                                      "name": "combo11111",
+                                      "category": "table",
+                                      "controls": [
+                                        {
+                                          "renderer": "mapping",
+                                          "labelWidth": "100px",
+                                          "name": "type",
+                                          "label": "类别",
+                                          "map": {
+                                            "1": "用户编号",
+                                            "2": "用户名称",
+                                            "3": "系统编号"
+                                          }
+                                        },
+                                        {
+                                          "renderer": "select",
+                                          "name": "relation",
+                                          "label": "关系",
+                                          "options": [
+                                            {
+                                              "text": "包含",
+                                              "value": "1"
+                                            },
+                                            {
+                                              "text": "不包含",
+                                              "value": "0"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "renderer": "input",
+                                          "name": "count",
+                                          "label": "金额"
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "submitType": "target",
+                                  "target": "Debug"
+                                }
+                              ],
+                              "header": [
+                                {
+                                  "renderer": "action",
+                                  "isText": true,
+                                  "initData": {
+                                    "type": "1"
+                                  },
+                                  "text": "用户编号",
+                                  "actionType": "trigger",
+                                  "triggered": "combo11111.add"
+                                },
+                                {
+                                  "renderer": "action",
+                                  "isText": true,
+                                  "initData": {
+                                    "type": "2"
+                                  },
+                                  "text": "用户名称",
+                                  "actionType": "trigger",
+                                  "triggered": "combo11111.add"
+                                },
+                                {
+                                  "renderer": "action",
+                                  "isText": true,
+                                  "initData": {
+                                    "type": "3"
+                                  },
+                                  "text": "系统编号",
+                                  "actionType": "trigger",
+                                  "triggered": "combo11111.add"
+                                }
+                              ],
+                              "footer": [],
+                              "inherit": {
+                                "type": "none",
+                                "value": []
+                              },
+                              "initData": {},
+                              "headerClassname": "combo-form__header",
+                              "bodyClassname": "combo-form__body",
+                              "footerClassname": "combo-form__footer",
+                              "classname": "combo-form__wrapper"
+                            }
+                          ],
+                          "initData": {
+                            "set": "value1"
+                          }
+                        },
+                        {
+                          "renderer": "data"
+                        }
+                      ],
+                      "footer": [
+                        {
+                          "renderer": "action",
+                          "text": "搜索",
+                          "actionType": "trigger",
+                          "triggered": "ComboFormData.submit",
+                          "popupType": "dialog",
+                          "popoverTitle": "142314",
+                          "popoverContent": "3444"
+                        }
+                      ],
+                      "renderer": "dialog"
+                    },
+                    "popupType": "dialog",
+                    "popoverTitle": "1234",
+                    "popoverContent": "23412"
+                  }
+                ],
+                "target": "Debug"
+              },
+              {
+                "renderer": "input",
+                "name": "id",
+                "label": "id",
+                "requiredOn": "1",
+                "visibleOn": "true",
+                "hiddenOn": "false",
+                "disabledOn": "false",
+                "placeholder": "请输入",
+                "suffixIcon": "Search",
+                "flexible": false,
+                "target": "FFFFA,Debug",
+                "rules": [
+                  {
+                    "type": "sw",
+                    "trigger": "blur"
+                  }
+                ],
+                "events": {
+                  "click": [
+                    "",
+                    {
+                      "actionType": "dialog",
+                      "body": {
+                        "body": {
+                          "renderer": "table",
+                          "columns": [
+                            {
+                              "label": "id",
+                              "name": "id",
+                              "width": "-",
+                              "sortable": false,
+                              "fixed": false,
+                              "type": "-",
+                              "align": "none",
+                              "body": []
+                            },
+                            {
+                              "label": "title",
+                              "name": "title",
+                              "width": "-",
+                              "sortable": false,
+                              "fixed": false,
+                              "type": "-",
+                              "align": "none",
+                              "body": []
+                            },
+                            {
+                              "label": "cover",
+                              "name": "cover",
+                              "width": "-",
+                              "sortable": false,
+                              "fixed": false,
+                              "type": "-",
+                              "align": "none",
+                              "body": []
+                            }
+                          ],
+                          "target": "FFFFA,Debug",
+                          "actions": [],
+                          "initApi": {
+                            "method": "get",
+                            "params": {},
+                            "url": "/videos.json"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "renderer": "custominput",
+                "name": "customInput1",
+                "label": "自定义校验1"
+              },
+              {
+                "renderer": "custominput",
+                "name": "customInput2",
+                "label": "自定义校验2"
+              },
+              {
+                "renderer": "action",
+                "text": "submit",
+                "actionType": "extends",
+                "triggered": "submit"
+              },
+              {
+                "renderer": "action",
+                "text": "reset",
+                "type": "warning",
+                "plain": true,
+                "actionType": "extends",
+                "triggered": "reset"
+              },
+              {
+                "renderer": "action",
+                "text": "login",
+                "type": "danger",
+                "plain": true,
+                "actionType": "login"
+              }
+            ],
+            "submitType": "target",
+            "target": "Debug",
+            "inline": true,
+            "frozen": true,
+            "silentLoading": true
+          },
+          {
+            "renderer": "service",
+            "name": "Debug",
+            "body": [
+              {
+                "renderer": "data"
+              }
+            ]
+          }
+        ],
+        "innerStyle": ".el-form-item.huiqian_name1 {\r\n  padding: 0;\r\n}\r\n.combo-form__wrapper {\r\n  display: flex;\r\n  flex-direction: 'row';\r\n}\r\n.combo-form__header {\r\n  width: 22%;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: self-start;\r\n  .el-button {\r\n    margin-left: 20px;\r\n  }\r\n}\r\n.combo-form__body {\r\n  width: 88%;\r\n  margin-top: -50px;\r\n}",
+        "initData": {
+          "customInput2": "aaaa"
+        },
+        "worker": "e => {\r\n  return new Promise((resolve, reject) => {\r\n    const timer = setTimeout(() => {\r\n      if (e.data.id === 'song')\r\n        resolve();\r\n      else\r\n        reject({message: 'id不合法！'});  \r\n    }, 3000);\r\n  });\r\n}"
+      },
+      "createdAt": "2023-02-14T11:09:46.000Z",
+      "updatedAt": "2023-06-04T02:10:19.000Z"
+    },
+    "status": 0,
+    "msg": "success"
+  }

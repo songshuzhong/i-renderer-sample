@@ -1,0 +1,33 @@
+{
+  "message": "success",
+  "status": 0,
+  "data": {
+    "rows": [
+      {
+        "name": "普通直播",
+        "id": 786,
+        "cover": "https://cdn.jsdelivr.net/gh/xdlumia/files/video-play/ironMan.jpg",
+        "length": "普通直播"
+      },
+      {
+        "name": "控流直播",
+        "id": 787,
+        "cover": "https://cdn.jsdelivr.net/gh/xdlumia/files/video-play/ironMan.jpg",
+        "length": "00:05:17"
+      },
+      {
+        "name": "视频直播",
+        "id": 788,
+        "cover": "https://cdn.jsdelivr.net/gh/xdlumia/files/video-play/ironMan.jpg",
+        "length": "00:05:17"
+      },
+      {
+        "name": "网页开播",
+        "id": 789,
+        "cover": "https://cdn.jsdelivr.net/gh/xdlumia/files/video-play/ironMan.jpg",
+        "length": "00:05:19"
+      }
+    ],
+    "count": 4
+  }
+}

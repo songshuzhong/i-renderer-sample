@@ -1,0 +1,103 @@
+{
+  "data": {        "projectId": "2f487a94-34fd-467d-b5e9-1ef3c785840d",
+  "pageId": "82ff7ed5-8350-460d-a51c-b7c24d4f86b3",
+  "pageName": "createPage",
+  "pageTitle": "API",
+  "pageIcon": "",
+  "groupBy": null,
+  "hidden": null,
+  "assets": [],
+  "visible": [],
+  "pageDesc": null,
+    "pageSchema": {
+      "renderer": "page",
+      "body": [
+        {
+          "renderer": "action",
+          "text": "发第三方权威",
+          "actionType": "ajax",
+          "actionApi": {
+            "url": "/asdfa",
+            "method": "post",
+            "params": {}
+          }
+        },
+        {
+          "renderer": "action",
+          "text": "跳转",
+          "actionType": "url",
+          "url": "/demo/query/12/gg?ss=221"
+        },
+        {
+        "renderer": "form",
+        "controls": [
+          {
+            "renderer": "combo",
+            "name": "option",
+            "label": "option",
+            "type": "custom",
+            "category": "no",
+            "controls": [
+              {
+                "renderer": "combo",
+                "type": "custom",
+                "name": "xAxis",
+                "label": "xAxis",
+                "controls": [
+                  {
+                    "renderer": "combo",
+                    "type": "array",
+                    "name": "data",
+                    "label": "data"
+                  },
+                  {
+                    "renderer": "input",
+                    "name": "type",
+                    "label": "type"
+                  }
+                ]
+              },
+              {
+                "renderer": "combo",
+                "type": "custom",
+                "name": "yAxis",
+                "label": "yAxis",
+                "controls": [
+                  {
+                    "renderer": "input",
+                    "name": "type",
+                    "label": "type"
+                  }
+                ]
+              },
+              {
+                "renderer": "combo",
+                "name": "series",
+                "label": "series",
+                "category": "no",
+                "controls": [
+                  {
+                    "renderer": "combo",
+                    "name": "data",
+                    "type": "array",
+                    "label": "data"
+                  },
+                  {
+                    "renderer": "input",
+                    "name": "type",
+                    "label": "type"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "renderer": "data"
+          }
+        ]
+      }]
+    }
+  },
+  "status": 0,
+  "msg": "success"
+}

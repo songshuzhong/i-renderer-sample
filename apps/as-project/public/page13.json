@@ -1,0 +1,1017 @@
+{
+  "code": 200,
+  "data": {
+    "pageId": "70f1d2c2-026d-46b6-b81d-520f7f573dbe",
+    "id": 113,
+    "projectId": "4",
+    "pageTitle": "表格项",
+    "pageName": "formTable2",
+    "namespace": "联通",
+    "pageIcon": null,
+    "groupBy": "form",
+    "updatedBy": "admin",
+    "updatedCause": null,
+    "hidden": false,
+    "assets": [],
+    "visible": [
+      8
+    ],
+    "pageDesc": null,
+    "pageSchema": {
+      "renderer": "page",
+      "refs": {
+        "dateMapping": [
+          {
+            "renderer": "html",
+            "html": "<%=$.$prop%>"
+          },
+          {
+            "renderer": "mapping",
+            "name": "$prop",
+            "promiseType": "sw"
+          }
+        ],
+        "statusMapping": {
+          "renderer": "mapping",
+          "name": "$label",
+          "status": "$label",
+          "map": {
+            "1": "<div class='cell-primary' />",
+            "2": "<div class='cell-success' />",
+            "3": "<div class='cell-warning' />",
+            "4": "<div class='cell-error' />",
+            "5": "<div class='cell-info' />"
+          }
+        }
+      },
+      "body": [
+        {
+          "renderer": "table",
+          "columns": [
+            {
+              "label": "Project Name",
+              "name": "project_name",
+              "width": "180px",
+              "fixed": "left"
+            },
+            {
+              "label": "Start Time",
+              "name": "start_time",
+              "width": "120px",
+              "fixed": "left"
+            },
+            {
+              "label": "End Time",
+              "name": "end_time",
+              "width": "120px",
+              "fixed": "left"
+            },
+            {
+              "label": "duration",
+              "name": "duration",
+              "width": "100px",
+              "fixed": "left"
+            },
+            {
+              "label": "period",
+              "name": "period",
+              "renderer": "column",
+              "body": [
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "1",
+                  "label": "date1",
+                  "classname": "project-table-period",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "2",
+                  "label": "date2",
+                  "classname": "project-table-period",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "3",
+                  "label": "date3",
+                  "classname": "project-table-period",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "4",
+                  "label": "date4",
+                  "classname": "project-table-period",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "5",
+                  "label": "date5",
+                  "classname": "project-table-period",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "6",
+                  "label": "date6",
+                  "classname": "project-table-period",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "7",
+                  "label": "date7",
+                  "classname": "project-table-period",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "8",
+                  "label": "date8",
+                  "classname": "project-table-period",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "9",
+                  "label": "date9",
+                  "classname": "project-table-period",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "10",
+                  "label": "date10",
+                  "classname": "project-table-period",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "11",
+                  "label": "date11",
+                  "classname": "project-table-period",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "12",
+                  "label": "date12",
+                  "classname": "project-table-period",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "13",
+                  "label": "date13",
+                  "classname": "project-table-period",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "14",
+                  "label": "date14",
+                  "classname": "project-table-period",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "15",
+                  "label": "date15",
+                  "classname": "project-table-period",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "16",
+                  "label": "date16",
+                  "classname": "project-table-period",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "17",
+                  "label": "date17",
+                  "classname": "project-table-period",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "18",
+                  "label": "date18",
+                  "classname": "project-table-period",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "19",
+                  "label": "date19",
+                  "classname": "project-table-period",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "20",
+                  "label": "date20",
+                  "classname": "project-table-period",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "21",
+                  "label": "date21",
+                  "classname": "project-table-period",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "22",
+                  "label": "date22",
+                  "classname": "project-table-period",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "23",
+                  "label": "date23",
+                  "classname": "project-table-period",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "24",
+                  "label": "date24",
+                  "classname": "project-table-period",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "25",
+                  "label": "date25",
+                  "classname": "project-table-period",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "26",
+                  "label": "date26",
+                  "classname": "project-table-period",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "27",
+                  "label": "date27",
+                  "classname": "project-table-period",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "28",
+                  "label": "date28",
+                  "classname": "project-table-period",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "29",
+                  "label": "date29",
+                  "classname": "project-table-period",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "30",
+                  "label": "date30",
+                  "classname": "project-table-period",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "31",
+                  "label": "date31",
+                  "classname": "project-table-period",
+                  "align": "center"
+                }
+              ],
+              "align": "center"
+            }
+          ],
+          "initApi": {
+            "url": "/projects.json",
+            "method": "get",
+            "cached": false,
+            "params": {}
+          }
+        },
+        {
+          "renderer": "divider"
+        },
+        {
+          "renderer": "table",
+          "columns": [
+            {
+              "label": "Project Name",
+              "name": "project_name",
+              "fixed": "left"
+            },
+            {
+              "label": "Start Time",
+              "name": "start_time",
+              "fixed": "left"
+            },
+            {
+              "label": "End Time",
+              "name": "end_time",
+              "fixed": "left"
+            },
+            {
+              "label": "duration",
+              "name": "duration",
+              "fixed": "left"
+            },
+            {
+              "label": "period",
+              "name": "period",
+              "renderer": "column",
+              "body": [
+                {
+                  "body": [],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "1",
+                  "label": "date1",
+                  "align": "center"
+                },
+                {
+                  "body": [],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "2",
+                  "label": "date2",
+                  "align": "center"
+                },
+                {
+                  "body": [],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "3",
+                  "label": "date3",
+                  "align": "center"
+                },
+                {
+                  "body": [],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "4",
+                  "label": "date4",
+                  "align": "center"
+                },
+                {
+                  "body": [],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "5",
+                  "label": "date5",
+                  "align": "center"
+                },
+                {
+                  "body": [],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "6",
+                  "label": "date6",
+                  "align": "center"
+                },
+                {
+                  "body": [],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "7",
+                  "label": "date7",
+                  "align": "center"
+                },
+                {
+                  "body": [],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "8",
+                  "label": "date8",
+                  "align": "center"
+                },
+                {
+                  "body": [],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "9",
+                  "label": "date9",
+                  "align": "center"
+                },
+                {
+                  "body": [],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "10",
+                  "label": "date10",
+                  "align": "center"
+                },
+                {
+                  "body": [],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "11",
+                  "label": "date11",
+                  "align": "center"
+                },
+                {
+                  "body": [],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "12",
+                  "label": "date12",
+                  "align": "center"
+                },
+                {
+                  "body": [],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "13",
+                  "label": "date13",
+                  "align": "center"
+                },
+                {
+                  "body": [],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "14",
+                  "label": "date14",
+                  "align": "center"
+                },
+                {
+                  "body": [],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "15",
+                  "label": "date15",
+                  "align": "center"
+                },
+                {
+                  "body": [],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "16",
+                  "label": "date16",
+                  "align": "center"
+                },
+                {
+                  "body": [],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "17",
+                  "label": "date17",
+                  "align": "center"
+                },
+                {
+                  "body": [],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "18",
+                  "label": "date18",
+                  "align": "center"
+                },
+                {
+                  "body": [],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "19",
+                  "label": "date19",
+                  "align": "center"
+                },
+                {
+                  "body": [],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "20",
+                  "label": "date20",
+                  "align": "center"
+                },
+                {
+                  "body": [],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "21",
+                  "label": "date21",
+                  "align": "center"
+                },
+                {
+                  "body": [],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "22",
+                  "label": "date22",
+                  "align": "center"
+                },
+                {
+                  "body": [],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "23",
+                  "label": "date23",
+                  "align": "center"
+                },
+                {
+                  "body": [],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "24",
+                  "label": "date24",
+                  "align": "center"
+                },
+                {
+                  "body": [],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "25",
+                  "label": "date25",
+                  "align": "center"
+                },
+                {
+                  "body": [],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "26",
+                  "label": "date26",
+                  "align": "center"
+                },
+                {
+                  "body": [],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "27",
+                  "label": "date27",
+                  "align": "center"
+                },
+                {
+                  "body": [],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "28",
+                  "label": "date28",
+                  "align": "center"
+                },
+                {
+                  "body": [],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "29",
+                  "label": "date29",
+                  "align": "center"
+                },
+                {
+                  "body": [],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "30",
+                  "label": "date30",
+                  "align": "center"
+                },
+                {
+                  "body": [],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "31",
+                  "label": "date31",
+                  "align": "center"
+                }
+              ],
+              "align": "center"
+            }
+          ],
+          "mergeCell": "col",
+          "initApi": {
+            "url": "/projects.json",
+            "method": "get",
+            "cached": false,
+            "params": {}
+          }
+        },
+        {
+          "renderer": "service",
+          "initApi": {
+            "url": "/sex.json",
+            "method": "get",
+            "cached": true,
+            "debounce": 0,
+            "params": {}
+          }
+        }
+      ],
+      "innerStyle": ".project-table-period {\r\n  &.el-table__cell {\r\n    padding: 0;\r\n    border: 0;\r\n  }\r\n  .cell {\r\n    padding: 0;\r\n  }\r\n  .cell-primary {\r\n    width: 80px;\r\n    height: 40px;\r\n    background: var(--el-color-primary);\r\n  }\r\n  .cell-success {\r\n    width: 80px;\r\n    height: 40px;\r\n    background: var(--el-color-success);\r\n  }\r\n  .cell-warning {\r\n    width: 80px;\r\n    height: 40px;\r\n    background: var(--el-color-warning);\r\n  }\r\n  .cell-error {\r\n    width: 80px;\r\n    height: 40px;\r\n    background: var(--el-color-error);\r\n  }\r\n}",
+      "worker": "e => {\r\n  return new Promise(resolve => {\r\n    const daysOfWeek = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];\r\n    const today = new Date();\r\n    const year = today.getFullYear();\r\n    const month = today.getMonth();\r\n    const firstDayOfMonth = new Date(year, month, 1);\r\n    const lastDayOfMonth = new Date(year, month + 1, 0);\r\n    const daysInMonth = lastDayOfMonth.getDate();\r\n    const result = {};\r\n    for (let i = 1; i <= 31; i++) {\r\n        result[i.toString()] = '-';\r\n    }\r\n    for (let day = firstDayOfMonth; day <= lastDayOfMonth; day.setDate(day.getDate() + 1)) {\r\n      const date = day.getDate();\r\n      const weekDay = daysOfWeek[day.getDay()];\r\n      result[date.toString()] = weekDay;\r\n    }\r\n\r\n    resolve(result);\r\n  });\r\n}"
+    }
+  }
+}

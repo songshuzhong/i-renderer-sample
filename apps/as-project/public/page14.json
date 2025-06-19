@@ -1,0 +1,367 @@
+{
+  "status": 0,
+  "message": "success",
+  "data": {
+    "projectId": "a1ec9e7c-1ca8-48ae-810d-73e3af022144",
+    "pageId": "0c5ddeef-6dbd-4379-8b2b-eeac33807461",
+    "pageName": "campaigns",
+    "pageTitle": "新建计划",
+    "pageIcon": "",
+    "groupBy": "超粉",
+    "hidden": false,
+    "assets": [
+      "https://songshuzhong.github.io/i-assets/public/js/Schedule.394219.min.js"
+    ],
+    "visible": [],
+    "pageDesc": null,
+    "pageSchema": {
+      "renderer": "page",
+      "refs": {
+        "lineChart": {
+          "renderer": "chart",
+          "height": 50,
+          "config": {
+            "grid": {
+              "top": "0%",
+              "right": "0%",
+              "bottom": "0%",
+              "left": "0%"
+            },
+            "xAxis": {
+              "type": "category",
+              "boundaryGap": false,
+              "axisLine": {
+                "show": false
+              },
+              "axisTick": {
+                "show": false
+              },
+              "axisLabel": {
+                "show": false
+              }
+            },
+            "yAxis": {
+              "type": "value",
+              "boundaryGap": [
+                0,
+                "30%"
+              ],
+              "axisLine": {
+                "show": false
+              },
+              "axisTick": {
+                "show": false
+              },
+              "axisLabel": {
+                "show": false
+              }
+            },
+            "series": [
+              {
+                "type": "line",
+                "smooth": 0.6,
+                "symbol": "none",
+                "markLine": {
+                  "symbol": [
+                    "none",
+                    "none"
+                  ],
+                  "label": {
+                    "show": false
+                  },
+                  "data": [
+                    {
+                      "xAxis": 1
+                    },
+                    {
+                      "xAxis": 3
+                    },
+                    {
+                      "xAxis": 5
+                    },
+                    {
+                      "xAxis": 7
+                    }
+                  ]
+                },
+                "data": [
+                  [
+                    "2019-10-10",
+                    200
+                  ],
+                  [
+                    "2019-10-11",
+                    560
+                  ],
+                  [
+                    "2019-10-12",
+                    750
+                  ],
+                  [
+                    "2019-10-13",
+                    580
+                  ],
+                  [
+                    "2019-10-14",
+                    250
+                  ],
+                  [
+                    "2019-10-15",
+                    300
+                  ],
+                  [
+                    "2019-10-16",
+                    450
+                  ],
+                  [
+                    "2019-10-17",
+                    300
+                  ],
+                  [
+                    "2019-10-18",
+                    100
+                  ]
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "body": [
+        {
+          "renderer": "table",
+          "initApi": {
+            "url": "/sales.json",
+            "method": "get",
+            "cached": false,
+            "debounce": 0,
+            "params": {}
+          },
+          "columns": [
+            {
+              "name": "name",
+              "fixed": "left",
+              "width": "160px",
+              "align": "center",
+              "classname": "sales-column-danger"
+            },
+            {
+              "label": "2020",
+              "name": "2020",
+              "body": [
+                {
+                  "renderer": "html",
+                  "inline": true,
+                  "html": "<div class=\"sales-rate <%=$['2020'].ratio > 0? 'success': 'error'%>\">\n  <span><%=$['2020'].data%></span>\n  <span><%=$['2020'].ratio%></span>\n</div>"
+                }
+              ],
+              "width": "140px",
+              "align": "center"
+            },
+            {
+              "label": "2021",
+              "name": "2021",
+              "classname": "sales-column-empty",
+              "body": [
+                {
+                  "renderer": "html",
+                  "inline": true,
+                  "html": "<div class=\"sales-rate <%=$['2021'].ratio > 0? 'success': 'danger'%>\">\n  <span><%=$['2021'].data%></span>\n  <span><%=$['2021'].ratio%></span>\n</div>"
+                }
+              ],
+              "width": "140px",
+              "align": "center"
+            },
+            {
+              "label": "2020Q1",
+              "name": "2020Q1",
+              "classname": "sales-column-success",
+              "body": [
+                {
+                  "renderer": "html",
+                  "inline": true,
+                  "html": "<div class=\"sales-rate <%=$['2020Q1'].ratio > 0? 'success': 'error'%>\">\n  <span><%=$['2020Q1'].data%></span>\n  <span><%=$['2020Q1'].ratio%></span>\n</div>"
+                }
+              ],
+              "width": "140px",
+              "align": "center"
+            },
+            {
+              "label": "2020Q2",
+              "name": "2020Q2",
+              "classname": "sales-column-empty",
+              "body": [
+                {
+                  "renderer": "html",
+                  "inline": true,
+                  "html": "<div class=\"sales-rate <%=$['2020Q2'].ratio > 0? 'success': 'error'%>\">\n  <span><%=$['2020Q2'].data%></span>\n  <span><%=$['2020Q2'].ratio%></span>\n</div>"
+                }
+              ],
+              "width": "140px",
+              "align": "center"
+            },
+            {
+              "label": "2020Q3",
+              "name": "2020Q3",
+              "classname": "sales-column-empty",
+              "body": [
+                {
+                  "renderer": "html",
+                  "inline": true,
+                  "html": "<div class=\"sales-rate <%=$['2020Q3'].ratio > 0? 'success': 'error'%>\">\n  <span><%=$['2020Q3'].data%></span>\n  <span><%=$['2020Q3'].ratio%></span>\n</div>"
+                }
+              ],
+              "width": "140px",
+              "align": "center"
+            },
+            {
+              "label": "2020Q4",
+              "name": "2020Q4",
+              "classname": "sales-column-empty",
+              "body": [
+                {
+                  "renderer": "html",
+                  "inline": true,
+                  "html": "<div class=\"sales-rate <%=$['2020Q4'].ratio > 0? 'success': 'error'%>\">\n  <span><%=$['2020Q4'].data%></span>\n  <span><%=$['2020Q4'].ratio%></span>\n</div>"
+                }
+              ],
+              "width": "140px",
+              "align": "center"
+            },
+            {
+              "label": "2021Q1",
+              "name": "2021Q1",
+              "classname": "sales-column-success",
+              "body": [
+                {
+                  "renderer": "html",
+                  "inline": true,
+                  "html": "<div class=\"sales-rate <%=$['2021Q1'].ratio > 0? 'success': 'error'%>\">\n  <span><%=$['2021Q1'].data%></span>\n  <span><%=$['2021Q1'].ratio%></span>\n</div>"
+                }
+              ],
+              "width": "140px",
+              "align": "center"
+            },
+            {
+              "label": "2021Q2",
+              "name": "2021Q2",
+              "classname": "sales-column-empty",
+              "body": [
+                {
+                  "renderer": "html",
+                  "inline": true,
+                  "html": "<div class=\"sales-rate <%=$['2021Q2'].ratio > 0? 'success': 'error'%>\">\n  <span><%=$['2021Q2'].data%></span>\n  <span><%=$['2021Q2'].ratio%></span>\n</div>"
+                }
+              ],
+              "width": "140px",
+              "align": "center"
+            },
+            {
+              "label": "2021Q3",
+              "name": "2021Q3",
+              "classname": "sales-column-empty",
+              "body": [
+                {
+                  "renderer": "html",
+                  "inline": true,
+                  "html": "<div class=\"sales-rate <%=$['2021Q3'].ratio > 0? 'success': 'error'%>\">\n  <span><%=$['2021Q3'].data%></span>\n  <span><%=$['2021Q3'].ratio%></span>\n</div>"
+                }
+              ],
+              "width": "140px",
+              "align": "center"
+            },
+            {
+              "label": "2021Q4",
+              "name": "2021Q4",
+              "classname": "sales-column-empty",
+              "body": [
+                {
+                  "renderer": "html",
+                  "inline": true,
+                  "html": "<div class=\"sales-rate <%=$['2021Q4'].ratio > 0? 'success': 'error'%>\">\n  <span><%=$['2021Q4'].data%></span>\n  <span><%=$['2021Q4'].ratio%></span>\n</div>"
+                }
+              ],
+              "width": "140px",
+              "align": "center"
+            },
+            {
+              "label": "lines",
+              "name": "lines",
+              "width": "260px",
+              "align": "center",
+              "body": {
+                "renderer": "render",
+                "body": "lineChart"
+              }
+            }
+          ],
+          "border": false,
+          "height": 375,
+          "classname": "sales-table"
+        },
+        {
+          "renderer": "table",
+          "initApi": {
+            "url": "/sex.json",
+            "method": "get",
+            "cached": false,
+            "debounce": 0,
+            "params": {}
+          },
+          "columns": [
+            {
+              "label": "age",
+              "name": "age",
+              "width": "50px",
+              "align": "center"
+            },
+            {
+              "label": "male",
+              "name": "male",
+              "body": [
+                {
+                  "renderer": "html",
+                  "html": "<span></span>\r\n<span style=\"width: <%=$.male/($.male + $.female)*100%>%\"></span>",
+                  "classname": "sex-rate male",
+                  "inline": true
+                }
+              ],
+              "width": "200px",
+              "align": "center",
+              "classname": "sex-table-column"
+            },
+            {
+              "label": "female",
+              "name": "female",
+              "body": [
+                {
+                  "renderer": "html",
+                  "inline": true,
+                  "html": "<span style=\"width: <%=$.female/($.male + $.female)*100%>%\"></span>\r\n<span></span>\r\n",
+                  "classname": "sex-rate female"
+                }
+              ],
+              "width": "200px",
+              "align": "center",
+              "classname": "sex-table-column"
+            },
+            {
+              "label": "age",
+              "name": "age",
+              "width": "50px",
+              "align": "center"
+            }
+          ],
+          "stripe": false,
+          "border": false,
+          "classname": "sex-table"
+        }
+      ],
+      "innerStyle": ".sales-table {\r\n  .sales-column-empty {\r\n    border: 0;\r\n  }\r\n  th {\r\n    border-bottom: 2px solid var(--el-color-error) !important;\r\n  }\r\n  .sales-column-danger {\r\n    border-right: 2px solid var(--el-color-error) !important;\r\n  }\r\n  .sales-column-success {\r\n    border-left: 2px solid var(--el-color-success) !important;\r\n  }\r\n  .sales-rate {\r\n    span:nth-of-type(1) {\r\n      width: 62px;\r\n      display: inline-block;\r\n    }\r\n    &.success {\r\n      span:nth-of-type(2) {\r\n        color: var(--el-color-success);\r\n      }\r\n    }\r\n    &.danger {\r\n      span:nth-of-type(2) {\r\n        color: var(--el-color-error);\r\n      }\r\n    }\r\n  }\r\n}\r\n.sex-table {\r\n  .el-table__cell {\r\n    padding: 0 !important;\r\n  }\r\n  .sex-table-column {\r\n    .cell {\r\n      padding: 0 !important;\r\n    }\r\n  }\r\n  .sex-rate {\r\n    display: flex;\r\n    align-items: center;\r\n    &.male {\r\n      span:nth-of-type(1) {\r\n        flex: 1;\r\n      }\r\n      span:nth-of-type(2) {\r\n        height: 16px;\r\n        background: var(--el-color-success);\r\n      }\r\n    }\r\n    &.female {      \r\n      span:nth-of-type(1) {\r\n        height: 16px;\r\n        background: var(--el-color-error);\r\n      }\r\n      span:nth-of-type(2) {\r\n        flex: 1;\r\n      }\r\n    }\r\n  }\r\n}"
+    },
+    "version": 1,
+    "status": 1,
+    "createdAt": "2021-09-25T08:26:54.000Z",
+    "updatedAt": "2023-10-16T02:02:32.000Z"
+  }
+}

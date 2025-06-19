@@ -1,0 +1,722 @@
+{
+  "code": 200,
+  "data": {
+    "pageId": "70f1d2c2-026d-46b6-b81d-520f7f573dbe",
+    "id": 113,
+    "projectId": "4",
+    "pageTitle": "表格项",
+    "pageName": "formTable2",
+    "namespace": "联通",
+    "pageIcon": null,
+    "groupBy": "form",
+    "updatedBy": "admin",
+    "updatedCause": null,
+    "hidden": false,
+    "assets": [],
+    "visible": [
+      8
+    ],
+    "pageDesc": null,
+    "pageSchema": {
+      "renderer": "page",
+      "refs": {
+        "dateMapping": [
+          {
+            "renderer": "html",
+            "html": "<%=1 + $.$index%>",
+            "style": {
+              "height": "16px"
+            }
+          },
+          {
+            "renderer": "mapping",
+            "name": "$index",
+            "promiseType": "sw"
+          }
+        ],
+        "statusMapping": {
+          "renderer": "mapping",
+          "name": "$label",
+          "status": "$label",
+          "map": {
+            "1": "<div class='cell-state cell-primary'>已关闭</div>",
+            "2": "<div class='cell-state cell-success'>已解决</div>",
+            "3": "<div class='cell-state cell-warning'>修复中</div>",
+            "4": "<div class='cell-state cell-error'>激活</div>",
+            "5": "<div class='cell-state cell-info'>待修复</div>"
+          }
+        }
+      },
+      "body": [
+        {
+          "renderer": "table",
+          "columns": [
+            {
+              "label": "Project Name",
+              "name": "project_name",
+              "width": "120px",
+              "align": "center",
+              "fixed": "left"
+            },
+            {
+              "label": "Start Time",
+              "name": "start_time",
+              "width": "120px",
+              "align": "center",
+              "fixed": "left"
+            },
+            {
+              "label": "End Time",
+              "name": "end_time",
+              "width": "120px",
+              "align": "center",
+              "fixed": "left"
+            },
+            {
+              "label": "duration",
+              "name": "duration",
+              "width": "120px",
+              "align": "center",
+              "fixed": "left"
+            },
+            {
+              "label": "period",
+              "name": "period",
+              "renderer": "column",
+              "body": [
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "date1",
+                  "label": "date1",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "date2",
+                  "label": "date2",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "date3",
+                  "label": "date3",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "date4",
+                  "label": "date4",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "date5",
+                  "label": "date5",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "date6",
+                  "label": "date6",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "date7",
+                  "label": "date7",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "date8",
+                  "label": "date8",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "date9",
+                  "label": "date9",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "date10",
+                  "label": "date10",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "date11",
+                  "label": "date11",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "date12",
+                  "label": "date12",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "date13",
+                  "label": "date13",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "date14",
+                  "label": "date14",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "date15",
+                  "label": "date15",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "date16",
+                  "label": "date16",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "date17",
+                  "label": "date17",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "date18",
+                  "label": "date18",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "date19",
+                  "label": "date19",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "date20",
+                  "label": "date20",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "date21",
+                  "label": "date21",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "date22",
+                  "label": "date22",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "date23",
+                  "label": "date23",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "date24",
+                  "label": "date24",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "date25",
+                  "label": "date25",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "date26",
+                  "label": "date26",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "date27",
+                  "label": "date27",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "date28",
+                  "label": "date28",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "date29",
+                  "label": "date29",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "date30",
+                  "label": "date30",
+                  "align": "center"
+                },
+                {
+                  "body": [
+                    {
+                      "renderer": "render",
+                      "body": "statusMapping"
+                    }
+                  ],
+                  "renderer": "column",
+                  "header": {
+                    "renderer": "render",
+                    "body": "dateMapping"
+                  },
+                  "name": "date31",
+                  "label": "date31",
+                  "align": "center"
+                }
+              ],
+              "align": "center"
+            }
+          ],
+          "actions": [
+            {
+              "renderer": "action",
+              "popupType": "dialog",
+              "actionType": "sw",
+              "popoverTitle": "确认拆分吗？",
+              "reload": "TableMerged",
+              "name": "SplitAction",
+              "initData": {
+                "actionType": "split"
+              },
+              "style": {
+                "visibility": "hidden"
+              }
+            },
+            {
+              "renderer": "action",
+              "actionType": "dialog",
+              "style": {
+                "visibility": "hidden"
+              },
+              "name": "DialogAction",
+              "initData": {
+                "actionType": "merge"
+              },
+              "body": {
+                "renderer": "dialog",
+                "width": 32,
+                "body": [
+                  {
+                    "renderer": "form",
+                    "submitType": "sw",
+                    "controls": [
+                      {
+                        "renderer": "combo",
+                        "name": "states",
+                        "label": "拆分",
+                        "type": "array",
+                        "controls": [
+                          {
+                            "renderer": "radio",
+                            "name": "state",
+                            "options": [
+                              {
+                                "text": "已关闭",
+                                "value": "1"
+                              },
+                              {
+                                "text": "已解决",
+                                "value": "2"
+                              },
+                              {
+                                "text": "修复中",
+                                "value": "3"
+                              },
+                              {
+                                "text": "激活",
+                                "value": "4"
+                              },
+                              {
+                                "text": "待修复",
+                                "value": "5"
+                              }
+                            ]
+                          }
+                        ],
+                        "visibleOn": "$.type==='split'"
+                      },
+                      {
+                        "renderer": "select",
+                        "name": "state",
+                        "label": "合并",
+                        "options": [
+                          {
+                            "text": "已关闭",
+                            "value": "1"
+                          },
+                          {
+                            "text": "已解决",
+                            "value": "2"
+                          },
+                          {
+                            "text": "修复中",
+                            "value": "3"
+                          },
+                          {
+                            "text": "激活",
+                            "value": "4"
+                          },
+                          {
+                            "text": "待修复",
+                            "value": "5"
+                          }
+                        ],
+                        "multiple": false,
+                        "visibleOn": "$.type==='merge'"
+                      }
+                    ],
+                    "name": "FormMerged",
+                    "reload": "TableMerged"
+                  }
+                ],
+                "footer": [
+                  {
+                    "renderer": "action",
+                    "actionType": "trigger",
+                    "triggered": "FormMerged.submit",
+                    "text": "提交"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "tds",
+              "target": "DialogAction,SplitAction",
+              "linkedOn": "$.type === target.actionType",
+              "renderer": "http://localhost:8080/Tdpicker.vue"
+            }
+          ],
+          "mergeCell": "both",
+          "initApi": {
+            "url": "/projects.json",
+            "method": "get",
+            "cached": false,
+            "params": {}
+          },
+          "classname": "merge-cell-table",
+          "rowKey": "projectName",
+          "name": "TableMerged"
+        }
+      ],
+      "innerStyle": ".merge-cell-table {\r\n  .i-crud__container__header {\r\n    margin-bottom: -38px;\r\n  }\r\n  .el-table__cell {\r\n    padding: 0;\r\n  }\r\n  .cell {\r\n    height: 40px;\r\n    padding: 0;\r\n  }\r\n  .cell-state {\r\n    width: 100%;\r\n    height: 40px;\r\n    line-height: 40px;\r\n    color: var(--el-color-white);\r\n    animation: zoom_1 500ms ease-in-out;\r\n  }\r\n  .cell-primary {\r\n    background: var(--el-color-primary);\r\n  }\r\n  .cell-success {\r\n    background: var(--el-color-success);\r\n  }\r\n  .cell-warning {\r\n    background: var(--el-color-warning);\r\n  }\r\n  .cell-error {\r\n    background: var(--el-color-error);\r\n  }\r\n}",
+      "worker": "e => {\r\n  if (e.data.type === 'merge' && e.track === '/page/body/0/actions/1/body/body/0') {\r\n    const tds = e.data.tds;\r\n    const result = [];\r\n    for (let i = 0; i < tds.length; i++) {\r\n      let o = {};\r\n      for (let j = 0; j < tds[i].length; j++) {\r\n        let td = tds[i][j];\r\n        for (let key in td) {\r\n          if (key !== 'projectName') {\r\n            td[key] = e.data.state; \r\n          }\r\n          o[key] = td[key];\r\n        }\r\n      }\r\n      result.push(o);\r\n    }\r\n    return Promise.resolve({selectedRows: result});\r\n  }\r\n  if (e.data.type === 'split' && e.track === '/page/body/0/actions/0') {\r\n    const tds = e.data.tds;\r\n    const o = {};\r\n    for (let i = 0; i < tds.length; i++) {\r\n      let td = tds[i];\r\n      o.projectName = td.projectName;\r\n      o[td.name] = '';\r\n    }\r\n    return Promise.resolve({selectedRows: [o]});\r\n  }\r\n  return new Promise(resolve => {\r\n    const daysOfWeek = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];\r\n    const today = new Date();\r\n    const year = today.getFullYear();\r\n    const month = today.getMonth();\r\n    const firstDayOfMonth = new Date(year, month, 1);\r\n    const lastDayOfMonth = new Date(year, month + 1, 0);\r\n    const daysInMonth = lastDayOfMonth.getDate();\r\n    const result = {};\r\n    for (let i = 1; i <= 31; i++) {\r\n        result[i.toString()] = '-';\r\n    }\r\n    for (let day = firstDayOfMonth; day <= lastDayOfMonth; day.setDate(day.getDate() + 1)) {\r\n      const date = day.getDate();\r\n      const weekDay = daysOfWeek[day.getDay()];\r\n      result[date.toString() - 1] = weekDay;\r\n    }\r\n\r\n    resolve(result);\r\n  });\r\n}"
+    }
+  }
+}

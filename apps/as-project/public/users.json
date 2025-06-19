@@ -1,0 +1,56 @@
+{
+  "status": 200,
+  "message": "success",
+  "data": {
+    "users": [
+      {
+        "name": "song",
+        "syncValid": 123,
+        "sex": "0",
+        "role": [],
+        "connect": true,
+        "mail": "fasdgre@jl.com",
+        "phone": "4665432465",
+        "createdAt": 1,
+        "adult": true,
+        "color": "#BE3F1F",
+        "textarea": "234",
+        "updatedAt": 1,
+        "richtxt": "eee1",
+        "rate": 1
+      },
+      {
+        "name": "shu",
+        "syncValid": 123,
+        "sex": "1",
+        "role": [],
+        "connect": false,
+        "mail": "fasdgre@jl.com",
+        "phone": "4665432465",
+        "createdAt": 2,
+        "adult": false,
+        "color": "#D6E810",
+        "textarea": "234",
+        "updatedAt": 2,
+        "richtxt": "eee2",
+        "rate": 3
+      },
+      {
+        "name": "zhong",
+        "syncValid": 123,
+        "sex": "1",
+        "role": [],
+        "connect": false,
+        "mail": "fasdgre@jl.com",
+        "phone": "4665432465",
+        "createdAt": 3,
+        "adult": true,
+        "color": "#2817E5",
+        "textarea": "234",
+        "updatedAt": 3,
+        "richtxt": "eee3",
+        "rate": 5
+      }
+    ]
+  }
+}
