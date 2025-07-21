@@ -27,6 +27,29 @@ module.exports = {
   },
   devServer: {
     setupMiddlewares: (middlewares, devServer) => {
+      devServer.app.get('/api/stream', (req, res, next) => {
+        res.writeHead(200, {
+          'Content-Type': 'text/event-stream',
+          'Cache-Control': 'no-cache',
+          'Connection': 'keep-alive'
+        });
+
+        let count = 0;
+        const interval = setInterval(() => {
+          count++;
+          res.write(`data: Message ${count}\n\n`);
+
+          if (count === 5) {
+            clearInterval(interval);
+            res.end();
+          }
+        }, 1000);
+
+        req.on('close', () => {
+          clearInterval(interval);
+          res.end();
+        });
+      });
       devServer.app.get('/chart.json', (req, res, next) => {
         const originalSend = res.send;
         res.send = function(body) {

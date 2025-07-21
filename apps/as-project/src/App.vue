@@ -25,7 +25,7 @@ export default defineComponent({
     });
     return {
       frameSchema: {
-        renderer: 'as-project',
+        renderer: 'admin',
         ...IndexSchema
       }
     };
